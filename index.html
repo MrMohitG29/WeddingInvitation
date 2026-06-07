@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohit & Rupanjana — Wedding Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&family=Great+Vibes&family=Hind:wght@400;600&family=Noto+Sans+Bengali:wght@400;600&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Charm:wght@400;700&family=DM+Serif+Text:ital@0;1&family=Gloria+Hallelujah&family=Kalam:wght@300;400;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/wedding-invitation.css">
+
+</head>
+<body>
+
+<!-- ════════════ GANESH JI OPENING ════════════ -->
+<div id="ganesh-intro" style="position:fixed;inset:0;z-index:99999;background:#0D0508;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;cursor:pointer" onclick="closeGanesh()">
+  <!-- Shiv Shakti background -->
+  <img src="images/shivShakti.png" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.27;pointer-events:none;filter:blur(1px)">
+  <p class="dm-serif-text-regular" style="position:relative;font-family:'Kalam', cursive;font-size:clamp(22px,4.5vw,34px);color:#D4A843;letter-spacing:3px;margin-bottom:20px;font-weight:400">ॐ श्री गणेशाय नमः</p>
+  <img src="images/ganeshji.png" alt="Shri Ganesh Ji" style="position:relative;width:clamp(160px,32vw,240px);max-height:40vh;object-fit:contain;margin-bottom:24px;animation:ganeshFloat 3s ease-in-out infinite;filter:drop-shadow(0 0 32px rgba(212,168,67,0.35))">
+  <p style="position:relative;font-family:'Cormorant Garamond',serif;font-size:clamp(20px,4vw,28px);color:#D4A843;font-style:italic;margin-bottom:8px;letter-spacing:1px">&#2357;&#2325;&#2381;&#2352;&#2340;&#2369;&#2339;&#2381;&#2337;&#2366;&#2351; &#2340;&#2381;&#2352;&#2351;&#2350;&#2381;&#2348;&#2325;&#2366;&#2351; &#2340;&#2381;&#2352;&#2367;&#2344;&#2375;&#2340;&#2381;&#2352;&#2366;&#2351; &#2342;&#2375;&#2357;&#2366;&#2350;&#2361;&#2375;</p>
+  <p style="position:relative;font-family:'Jost',sans-serif;font-size:11px;color:rgba(212,168,67,0.45);letter-spacing:3px;text-transform:uppercase;margin-bottom:6px">Vakratunda Mahakaaya, Surya Koti Samaprabha</p>
+  <p style="position:relative;font-family:'Cormorant Garamond',serif;font-size:13px;color:rgba(212,168,67,0.45);font-style:italic;margin-bottom:32px">Nirvighnam Kuru Me Deva Sarva, Kaaryeshu Sarvadaa</p>
+  <p style="position:relative;font-family:'Jost',sans-serif;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:rgba(240,231,14,0.85);animation:pulse 2s infinite">Tap to Enter</p>
+</div>
+
+<nav>
+  <a href="#events" data-i18n="nav-events">Events</a>
+  <a href="#venue" data-i18n="nav-venue">Venue</a>
+  <a href="#expect" data-i18n="nav-expect">Expect</a>
+  <a href="#rsvp" data-i18n="nav-rsvp">RSVP</a>
+</nav>
+
+<!-- ═══════════════════ HERO ═══════════════════ -->
+<section class="hero">
+
+  <!-- Door garland toran — top of hero -->
+  <img src="images/doorDecoration.png" alt="" aria-hidden="true" class="deco-garland deco-garland--hero">
+  <!-- Hanging decoration — flanking left edge only -->
+  <img src="images/hangingUmbrellAndFlowerDecoration.png" alt="" aria-hidden="true" class="deco-hanging deco-hanging--left">
+  <!-- Hanging decoration — flanking right edge only -->
+  <img src="images/hangingUmbrellAndFlowerDecoration.png" alt="" aria-hidden="true" class="deco-hanging deco-hanging--right">
+
+  <!-- Rich SVG background: paisley, lotus, lamps, marigold chains -->
+  <svg class="hero-bg-svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <!-- Paisley pattern top-left -->
+    <g opacity=".18" fill="none" stroke="#E8B84B" stroke-width="1.2">
+      <ellipse cx="80" cy="80" rx="50" ry="30" transform="rotate(-30 80 80)"/>
+      <ellipse cx="80" cy="80" rx="38" ry="22" transform="rotate(-30 80 80)"/>
+      <path d="M80 50 Q110 60 100 90 Q90 115 80 110 Q65 105 68 85 Q70 65 80 50Z"/>
+      <circle cx="80" cy="80" r="6"/>
+      <circle cx="80" cy="80" r="3" fill="#E8B84B"/>
+      <!-- petals -->
+      <path d="M80 50 Q95 55 90 70"/>
+      <path d="M100 65 Q108 78 100 90"/>
+      <path d="M68 85 Q62 95 70 105"/>
+    </g>
+    <!-- Paisley top-right -->
+    <g opacity=".18" fill="none" stroke="#E8B84B" stroke-width="1.2" transform="translate(1120,80) rotate(150)">
+      <ellipse cx="0" cy="0" rx="50" ry="30"/>
+      <ellipse cx="0" cy="0" rx="38" ry="22"/>
+      <path d="M0 -30 Q30 -20 20 10 Q10 35 0 30 Q-15 25 -12 5 Q-10 -15 0 -30Z"/>
+      <circle cx="0" cy="0" r="6"/>
+      <circle cx="0" cy="0" r="3" fill="#E8B84B"/>
+    </g>
+
+    <!-- Marigold garland top -->
+    <g opacity=".22">
+      <path d="M0 30 Q150 60 300 30 Q450 0 600 30 Q750 60 900 30 Q1050 0 1200 30" fill="none" stroke="#E8B84B" stroke-width="2.5" stroke-dasharray="8,4"/>
+      <!-- flowers along garland -->
+      <g fill="#FF9933">
+        <circle cx="100" cy="38" r="7"/><circle cx="95" cy="32" r="4"/><circle cx="105" cy="32" r="4"/><circle cx="100" cy="28" r="4"/><circle cx="91" cy="38" r="4"/><circle cx="109" cy="38" r="4"/>
+        <circle cx="100" cy="38" r="4" fill="#E8B84B"/>
+      </g>
+      <g fill="#FF9933">
+        <circle cx="300" cy="22" r="7"/><circle cx="295" cy="16" r="4"/><circle cx="305" cy="16" r="4"/><circle cx="300" cy="12" r="4"/><circle cx="291" cy="22" r="4"/><circle cx="309" cy="22" r="4"/>
+        <circle cx="300" cy="22" r="4" fill="#E8B84B"/>
+      </g>
+      <g fill="#FF9933">
+        <circle cx="500" cy="35" r="7"/><circle cx="495" cy="29" r="4"/><circle cx="505" cy="29" r="4"/><circle cx="500" cy="25" r="4"/><circle cx="491" cy="35" r="4"/><circle cx="509" cy="35" r="4"/>
+        <circle cx="500" cy="35" r="4" fill="#E8B84B"/>
+      </g>
+      <g fill="#FF9933">
+        <circle cx="700" cy="22" r="7"/><circle cx="695" cy="16" r="4"/><circle cx="705" cy="16" r="4"/><circle cx="700" cy="12" r="4"/><circle cx="691" cy="22" r="4"/><circle cx="709" cy="22" r="4"/>
+        <circle cx="700" cy="22" r="4" fill="#E8B84B"/>
+      </g>
+      <g fill="#FF9933">
+        <circle cx="900" cy="36" r="7"/><circle cx="895" cy="30" r="4"/><circle cx="905" cy="30" r="4"/><circle cx="900" cy="26" r="4"/><circle cx="891" cy="36" r="4"/><circle cx="909" cy="36" r="4"/>
+        <circle cx="900" cy="36" r="4" fill="#E8B84B"/>
+      </g>
+      <g fill="#FF9933">
+        <circle cx="1100" cy="22" r="7"/><circle cx="1095" cy="16" r="4"/><circle cx="1105" cy="16" r="4"/><circle cx="1100" cy="12" r="4"/><circle cx="1091" cy="22" r="4"/><circle cx="1109" cy="22" r="4"/>
+        <circle cx="1100" cy="22" r="4" fill="#E8B84B"/>
+      </g>
+    </g>
+
+    <!-- Diyas (oil lamps) bottom corners -->
+    <!-- Left diya -->
+    <g transform="translate(60,800)" opacity=".85">
+      <!-- base -->
+      <path d="M-25 20 Q0 30 25 20 Q30 10 0 5 Q-30 10 -25 20Z" fill="#C8942A"/>
+      <path d="M-22 20 Q0 27 22 20 Q26 12 0 8 Q-26 12 -22 20Z" fill="#E8B84B"/>
+      <!-- oil -->
+      <ellipse cx="0" cy="12" rx="15" ry="6" fill="#D4A017"/>
+      <!-- wick flame -->
+      <ellipse cx="0" cy="6" rx="4" ry="7" fill="#FF9933"/>
+      <ellipse cx="0" cy="4" rx="2.5" ry="5" fill="#FFE066"/>
+      <ellipse cx="0" cy="2" rx="1.2" ry="3" fill="#fff" opacity=".8"/>
+      <!-- glow rings -->
+      <ellipse cx="0" cy="4" rx="12" ry="12" fill="none" stroke="#FF9933" stroke-width="1" opacity=".3"/>
+      <ellipse cx="0" cy="4" rx="20" ry="20" fill="none" stroke="#FF9933" stroke-width="0.5" opacity=".15"/>
+    </g>
+    <!-- Right diya -->
+    <g transform="translate(1140,800)" opacity=".55">
+      <path d="M-25 20 Q0 30 25 20 Q30 10 0 5 Q-30 10 -25 20Z" fill="#C8942A"/>
+      <path d="M-22 20 Q0 27 22 20 Q26 12 0 8 Q-26 12 -22 20Z" fill="#E8B84B"/>
+      <ellipse cx="0" cy="12" rx="15" ry="6" fill="#D4A017"/>
+      <ellipse cx="0" cy="6" rx="4" ry="7" fill="#FF9933"/>
+      <ellipse cx="0" cy="4" rx="2.5" ry="5" fill="#FFE066"/>
+      <ellipse cx="0" cy="2" rx="1.2" ry="3" fill="#fff" opacity=".8"/>
+      <ellipse cx="0" cy="4" rx="12" ry="12" fill="none" stroke="#FF9933" stroke-width="1" opacity=".3"/>
+    </g>
+
+    <!-- Lotus bottom center -->
+    <g transform="translate(600,870)" opacity=".3">
+      <ellipse cx="0" cy="0" rx="60" ry="18" fill="#F2C4B8"/>
+      <path d="M0 -35 Q12 -15 0 0 Q-12 -15 0 -35Z" fill="#F2C4B8"/>
+      <path d="M-20 -28 Q-5 -12 0 0 Q-18 -10 -20 -28Z" fill="#F2C4B8"/>
+      <path d="M20 -28 Q5 -12 0 0 Q18 -10 20 -28Z" fill="#F2C4B8"/>
+      <path d="M-38 -15 Q-15 -8 0 0 Q-28 -2 -38 -15Z" fill="#E8A090"/>
+      <path d="M38 -15 Q15 -8 0 0 Q28 -2 38 -15Z" fill="#E8A090"/>
+      <circle cx="0" cy="0" r="7" fill="#E8B84B"/>
+    </g>
+
+    <!-- Decorative geometric border bottom -->
+    <path d="M0 860 L1200 860" stroke="rgba(232,184,75,.25)" stroke-width="1"/>
+    <path d="M0 870 L1200 870" stroke="rgba(232,184,75,.15)" stroke-width="0.5"/>
+
+    <!-- Floating petals -->
+    <g opacity=".2">
+      <ellipse cx="200" cy="400" rx="8" ry="4" fill="#F2C4B8" transform="rotate(-30 200 400)"/>
+      <ellipse cx="400" cy="250" rx="6" ry="3" fill="#FF9933" transform="rotate(20 400 250)"/>
+      <ellipse cx="800" cy="600" rx="7" ry="3.5" fill="#F2C4B8" transform="rotate(-45 800 600)"/>
+      <ellipse cx="1000" cy="350" rx="6" ry="3" fill="#FF9933" transform="rotate(15 1000 350)"/>
+      <ellipse cx="150" cy="600" rx="5" ry="2.5" fill="#E8B84B" transform="rotate(30 150 600)"/>
+      <ellipse cx="1050" cy="650" rx="6" ry="3" fill="#F2C4B8" transform="rotate(-20 1050 650)"/>
+    </g>
+
+    <!-- Subtle kalash (pot) shapes -->
+    <g opacity=".12" fill="none" stroke="#E8B84B" stroke-width="1.5">
+      <path d="M30 750 Q20 720 35 700 Q50 680 50 680 L70 680 Q70 680 85 700 Q100 720 90 750Z"/>
+      <ellipse cx="60" cy="680" rx="15" ry="6"/>
+      <path d="M50 680 Q60 660 70 680"/>
+      <path d="M45 720 Q60 730 75 720"/>
+      <path d="M1110 750 Q1100 720 1115 700 Q1130 680 1130 680 L1150 680 Q1150 680 1165 700 Q1180 720 1170 750Z"/>
+      <ellipse cx="1140" cy="680" rx="15" ry="6"/>
+      <path d="M1130 680 Q1140 660 1150 680"/>
+      <path d="M1125 720 Q1140 730 1155 720"/>
+    </g>
+
+    <!-- ═══ RADHA KRISHNA — centered background illustration, low opacity ═══ -->
+    <image href="images/radhaKrishna.png" x="440" y="160" width="320" height="560" opacity="0.28" preserveAspectRatio="xMidYMid meet"/>
+    <!-- <g transform="translate(600,450)" opacity="0" aria-hidden="true"> -->
+    <!-- ═══ END RADHA KRISHNA ═══ -->
+
+  </svg>
+
+  <div class="hero-content">
+    <p class="hero-badge" data-i18n="hero-badge">❈ একটি বিবাহের আমন্ত্রণ · A Wedding Invitation ❈</p>
+    <p class="hero-tagline" data-i18n="hero-tagline">"Two families, one celebration, and approximately 47,000 decibels of happiness.<br>One side brings the mishti doi. The other brings the baraati. Both bring chaos, lovingly."</p>
+    <div class="hero-names">
+      Mohit<span class="amp">&amp;</span>Rupanjana
+    </div>
+    <p class="hero-sub" data-i18n="hero-sub">A boy from Jhansi &amp; a girl from Bengal walk into a wedding…<br>and everyone lived happily, and very loudly, ever after. 🌸</p>
+    <div class="scroll-hint"><span>Scroll</span><div class="scroll-arrow"></div></div>
+  </div>
+</section>
+
+<!-- marigold strip -->
+<div class="marigold-strip" style="color:rgba(58,20,2,.65)">❈ &nbsp; ✦ &nbsp; ❈ &nbsp; ✦ &nbsp; ❈ &nbsp; ✦ &nbsp; ❈ &nbsp; ✦ &nbsp; ❈ &nbsp; ✦ &nbsp; ❈ &nbsp; ✦ &nbsp; ❈</div>
+
+<!-- ════ SANSKRIT SHLOK BAND ════ -->
+<div style="background:rgb(74, 26, 5);padding:48px 24px;text-align:center;border-top:1px solid rgba(184,134,11,.15);border-bottom:1px solid rgba(184,134,11,.15);position:relative;overflow:hidden">
+  <!-- subtle mandala bg -->
+  <svg style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);opacity:.04;pointer-events:none" width="400" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" stroke="#D4A843" stroke-width="0.8">
+      <circle cx="200" cy="100" r="90"/><circle cx="200" cy="100" r="70"/><circle cx="200" cy="100" r="50"/><circle cx="200" cy="100" r="30"/>
+      <path d="M200 10 L210 50 L200 40 L190 50Z"/><path d="M200 190 L210 150 L200 160 L190 150Z"/>
+      <path d="M110 100 L150 110 L140 100 L150 90Z"/><path d="M290 100 L250 110 L260 100 L250 90Z"/>
+    </g>
+  </svg>
+  <p style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:5px;text-transform:uppercase;color:rgba(184,134,11,.5);margin-bottom:20px">&#10022; Sanskrit Shlok &#10022;</p>
+  <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(18px,3.5vw,26px);color:#D4A843;font-style:italic;line-height:1.9;margin-bottom:10px;max-width:680px;margin-left:auto;margin-right:auto">
+    &#2360;&#2346;&#2381;&#2340;&#2346;&#2342;&#2368; &#2349;&#2357; &#2360;&#2326;&#2366;&#2351;&#2375;&#2350;&#2381; &#2360;&#2346;&#2381;&#2340;&#2346;&#2342;&#2368; &#2349;&#2357; &#2360;&#2326;&#2366;&#2351;&#2375;&#2350;&#2381; ।<br>
+    &#2360;&#2326;&#2366;&#2351;&#2377; &#2310;&#2357;&#2366;&#2350; &#2361;&#2381;&#2352;&#2343;&#2351;&#2306; &#2352;&#2358;&#2381;&#2351;&#2340;&#2375; &#2346;&#2369;&#2352;&#2366;&#2339;&#2368;&#2350;&#2381; ॥
+  </p>
+  <p style="font-family:'Jost',sans-serif;font-size:11px;color:rgba(212,168,67,.4);letter-spacing:1.5px;margin-bottom:6px;font-style:italic">Saptapadi bhava sakhaayem saptapadi bhava sakhaayem</p>
+  <p style="font-family:'Cormorant Garamond',serif;font-size:14px;color:rgba(212,168,67,.35);font-style:italic;max-width:480px;margin:0 auto">&ldquo;Having taken seven steps together, may you be my companion forever. May this friendship between us be everlasting.&rdquo;</p>
+  <div style="margin-top:28px;display:flex;align-items:center;justify-content:center;gap:20px">
+    <div style="height:1px;width:80px;background:linear-gradient(90deg,transparent,rgba(184,134,11,.4))"></div>
+    <span style="color:rgba(184,134,11,.5);font-size:16px">&#x0950;</span>
+    <div style="height:1px;width:80px;background:linear-gradient(90deg,rgba(184,134,11,.4),transparent)"></div>
+  </div>
+</div>
+
+<!-- COUNTDOWN -->
+<div class="countdown reveal">
+  <div style="margin-bottom:28px">
+    <p style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:6px;text-transform:uppercase;color:rgba(58,20,2,.5);margin-bottom:10px">✦ Wedding Date ✦</p>
+    <p style="font-family:'Great Vibes',cursive;font-size:clamp(38px,7vw,64px);color:maroon;line-height:1;margin-bottom:4px">29 January 2026</p>
+    <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-top:10px">
+      <div style="height:1px;width:60px;background:linear-gradient(90deg,transparent,rgba(58,20,2,.3))"></div>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:13px;letter-spacing:3px;color:rgba(58,20,2,.5);font-style:italic">Indore, India</p>
+      <div style="height:1px;width:60px;background:linear-gradient(90deg,rgba(58,20,2,.3),transparent)"></div>
+    </div>
+  </div>
+
+  <p class="cd-label" data-i18n="cd-label">✦ The Big Day Is In ✦</p>
+  <div class="cd-boxes">
+    <div class="cd-box"><span class="cd-num" id="cd-days">—</span><span class="cd-unit" data-i18n="cd-days">Days</span></div>
+    <div class="cd-box"><span class="cd-num" id="cd-hours">—</span><span class="cd-unit" data-i18n="cd-hours">Hours</span></div>
+    <div class="cd-box"><span class="cd-num" id="cd-mins">—</span><span class="cd-unit" data-i18n="cd-mins">Minutes</span></div>
+    <div class="cd-box"><span class="cd-num" id="cd-secs">—</span><span class="cd-unit" data-i18n="cd-secs">Seconds</span></div>
+  </div>
+</div>
+
+<!-- ═══════ ELEPHANT PROCESSION ILLUSTRATION BAND ═══════ -->
+<div class="illus-band">
+  <svg viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" style="display:block;width:100%;background:#0D0508">
+    <!-- Sky gradient suggestion via rects -->
+    <rect width="1200" height="220" fill="#0D0508"/>
+    <!-- ground -->
+    <rect y="170" width="1200" height="50" fill="#5C1220"/>
+    <!-- Ground pattern -->
+    <path d="M0 170 Q60 165 120 170 Q180 175 240 170 Q300 165 360 170 Q420 175 480 170 Q540 165 600 170 Q660 175 720 170 Q780 165 840 170 Q900 175 960 170 Q1020 165 1080 170 Q1140 175 1200 170" fill="none" stroke="#C8942A" stroke-width="1.5" opacity=".4"/>
+
+    <!-- === ELEPHANT 1 (large, decorated, center-left) === -->
+    <g transform="translate(280,30)">
+      <!-- body -->
+      <ellipse cx="80" cy="110" rx="75" ry="55" fill="#5C4A3A"/>
+      <!-- head -->
+      <ellipse cx="145" cy="85" rx="42" ry="38" fill="#5C4A3A"/>
+      <!-- ear -->
+      <ellipse cx="120" cy="78" rx="25" ry="30" fill="#7A6555"/>
+      <ellipse cx="122" cy="80" rx="16" ry="20" fill="#C8845A" opacity=".4"/>
+      <!-- eye -->
+      <circle cx="158" cy="76" r="6" fill="#2A1005"/>
+      <circle cx="158" cy="76" r="3" fill="#fff"/>
+      <circle cx="159" cy="75" r="1.5" fill="#2A1005"/>
+      <!-- trunk -->
+      <path d="M175 98 Q195 115 190 135 Q185 155 175 160 Q165 165 162 155 Q158 145 168 140 Q175 135 172 120 Q169 108 160 105" fill="#5C4A3A" stroke="#4A3828" stroke-width="1"/>
+      <!-- tusk -->
+      <path d="M170 102 Q185 98 190 88 Q192 82 185 80" fill="none" stroke="#F5E8C8" stroke-width="4" stroke-linecap="round"/>
+      <!-- tail -->
+      <path d="M10 110 Q-5 120 -8 135 Q-6 140 -2 135" fill="none" stroke="#5C4A3A" stroke-width="5" stroke-linecap="round"/>
+      <!-- legs -->
+      <rect x="30" y="155" width="22" height="32" rx="8" fill="#4A3828"/>
+      <rect x="58" y="158" width="22" height="30" rx="8" fill="#4A3828"/>
+      <rect x="90" y="158" width="22" height="30" rx="8" fill="#4A3828"/>
+      <rect x="118" y="155" width="22" height="32" rx="8" fill="#4A3828"/>
+      <!-- feet -->
+      <ellipse cx="41" cy="187" rx="12" ry="5" fill="#3A2818"/><ellipse cx="69" cy="188" rx="12" ry="5" fill="#3A2818"/>
+      <ellipse cx="101" cy="188" rx="12" ry="5" fill="#3A2818"/><ellipse cx="129" cy="187" rx="12" ry="5" fill="#3A2818"/>
+      <!-- DECORATED HOWDAH (seat on elephant) -->
+      <!-- base cloth -->
+      <rect x="20" y="58" width="118" height="45" rx="4" fill="#A52840"/>
+      <!-- gold border -->
+      <rect x="20" y="58" width="118" height="45" rx="4" fill="none" stroke="#C8942A" stroke-width="2"/>
+      <!-- decorative diamonds -->
+      <path d="M50 70 L60 80 L50 90 L40 80Z" fill="#C8942A" opacity=".7"/>
+      <path d="M90 70 L100 80 L90 90 L80 80Z" fill="#C8942A" opacity=".7"/>
+      <path d="M130 70 L140 80 L130 90 L120 80Z" fill="#C8942A" opacity=".7"/>
+      <!-- fringe -->
+      <path d="M20 103 L26 115 M32 103 L32 116 M38 103 L38 116 M44 103 L44 116 M50 103 L50 116 M56 103 L56 116 M62 103 L62 116 M68 103 L68 116 M74 103 L74 116 M80 103 L80 116 M86 103 L86 116 M92 103 L92 116 M98 103 L98 116 M104 103 L104 116 M110 103 L110 116 M116 103 L116 116 M122 103 L122 116 M128 103 L128 115" stroke="#E8B84B" stroke-width="1.5"/>
+      <!-- Umbrella/chhatri on howdah -->
+      <line x1="79" y1="58" x2="79" y2="22" stroke="#C8942A" stroke-width="2"/>
+      <path d="M44 24 Q79 5 114 24 Q79 18 44 24Z" fill="#A52840"/>
+      <path d="M52 26 Q79 12 106 26" fill="none" stroke="#C8942A" stroke-width="1"/>
+      <!-- marigold garland on elephant -->
+      <path d="M20 80 Q79 95 138 80" fill="none" stroke="#FF9933" stroke-width="3" opacity=".6"/>
+      <!-- forehead decoration -->
+      <path d="M145 55 L155 45 L165 55 L155 65Z" fill="#C8942A"/>
+      <circle cx="155" cy="55" r="4" fill="#E8B84B"/>
+      <!-- forehead chain -->
+      <path d="M135 65 Q145 55 155 55 Q165 55 175 65" fill="none" stroke="#C8942A" stroke-width="1.5"/>
+      <!-- anklets -->
+      <rect x="28" y="154" width="26" height="4" rx="2" fill="#C8942A"/>
+      <rect x="56" y="157" width="26" height="4" rx="2" fill="#C8942A"/>
+      <rect x="88" y="157" width="26" height="4" rx="2" fill="#C8942A"/>
+      <rect x="116" y="154" width="26" height="4" rx="2" fill="#C8942A"/>
+      <!-- mahout (rider) -->
+      <circle cx="79" cy="45" r="10" fill="#C8845A"/>
+      <rect x="70" y="38" width="18" height="8" rx="4" fill="#1A0A05"/><!-- turban -->
+      <rect x="72" y="55" width="14" height="8" rx="3" fill="#C8942A"/>
+    </g>
+
+    <!-- === ELEPHANT 2 (smaller, right side) === -->
+    <g transform="translate(820,55) scale(0.72)">
+      <ellipse cx="80" cy="110" rx="75" ry="55" fill="#4A3828"/>
+      <ellipse cx="145" cy="85" rx="42" ry="38" fill="#4A3828"/>
+      <ellipse cx="120" cy="78" rx="25" ry="30" fill="#6A5545"/>
+      <ellipse cx="122" cy="80" rx="16" ry="20" fill="#C8845A" opacity=".35"/>
+      <circle cx="158" cy="76" r="6" fill="#2A1005"/>
+      <circle cx="158" cy="76" r="3" fill="#fff"/>
+      <path d="M175 98 Q195 115 190 135 Q185 155 175 160 Q165 165 162 155 Q158 145 168 140 Q175 135 172 120 Q169 108 160 105" fill="#4A3828" stroke="#3A2818" stroke-width="1"/>
+      <path d="M170 102 Q185 98 190 88 Q192 82 185 80" fill="none" stroke="#F5E8C8" stroke-width="4" stroke-linecap="round"/>
+      <rect x="30" y="155" width="22" height="32" rx="8" fill="#3A2818"/>
+      <rect x="58" y="158" width="22" height="30" rx="8" fill="#3A2818"/>
+      <rect x="90" y="158" width="22" height="30" rx="8" fill="#3A2818"/>
+      <rect x="118" y="155" width="22" height="32" rx="8" fill="#3A2818"/>
+      <ellipse cx="41" cy="187" rx="12" ry="5" fill="#2A1808"/>
+      <ellipse cx="69" cy="188" rx="12" ry="5" fill="#2A1808"/>
+      <ellipse cx="101" cy="188" rx="12" ry="5" fill="#2A1808"/>
+      <ellipse cx="129" cy="187" rx="12" ry="5" fill="#2A1808"/>
+      <rect x="20" y="65" width="118" height="40" rx="4" fill="#7B1C2E"/>
+      <rect x="20" y="65" width="118" height="40" rx="4" fill="none" stroke="#C8942A" stroke-width="2"/>
+      <path d="M70 75 L80 85 L70 95 L60 85Z" fill="#C8942A" opacity=".7"/>
+      <path d="M110 75 L120 85 L110 95 L100 85Z" fill="#C8942A" opacity=".7"/>
+      <path d="M20 105 L25 116 M31 105 L31 116 M37 105 L37 116 M43 105 L43 116 M49 105 L49 116 M55 105 L55 116 M61 105 L61 116 M67 105 L67 116 M73 105 L73 116 M79 105 L79 116 M85 105 L85 116 M91 105 L91 116 M97 105 L97 116 M103 105 L103 116 M109 105 L109 116 M115 105 L115 116 M121 105 L121 116 M127 105 L127 115" stroke="#E8B84B" stroke-width="1.5"/>
+      <path d="M145 55 L155 45 L165 55 L155 65Z" fill="#C8942A"/>
+      <circle cx="155" cy="55" r="4" fill="#E8B84B"/>
+    </g>
+
+    <!-- === DECORATED HORSE for Barat (center-right) === -->
+    <g transform="translate(570,40)">
+      <!-- horse body -->
+      <ellipse cx="90" cy="120" rx="65" ry="40" fill="#8B6914"/>
+      <!-- neck -->
+      <path d="M140 90 Q160 60 155 40 Q150 25 140 30 Q130 35 135 55 Q135 70 130 85" fill="#8B6914" stroke="#7A5A10" stroke-width="1"/>
+      <!-- head -->
+      <ellipse cx="152" cy="30" rx="22" ry="18" fill="#8B6914"/>
+      <!-- nostril -->
+      <ellipse cx="162" cy="36" rx="5" ry="4" fill="#7A5A10"/>
+      <!-- eye -->
+      <circle cx="144" cy="24" r="5" fill="#2A1005"/>
+      <circle cx="144" cy="24" r="2.5" fill="#fff"/>
+      <!-- mane -->
+      <path d="M140 30 Q145 15 148 8 Q150 2 145 5 Q140 8 142 18 Q138 22 136 30" fill="#5C3A08"/>
+      <path d="M138 35 Q132 20 134 12 Q133 6 130 10 Q128 15 132 24 Q130 30 132 38" fill="#5C3A08"/>
+      <!-- ear -->
+      <path d="M140 20 L145 8 L150 20Z" fill="#8B6914"/>
+      <!-- tail -->
+      <path d="M28 115 Q10 130 8 148 Q8 155 14 150 Q18 145 16 135 Q20 125 28 120" fill="#5C3A08"/>
+      <!-- legs -->
+      <rect x="48" y="152" width="18" height="36" rx="6" fill="#7A5A10"/>
+      <rect x="74" y="155" width="18" height="34" rx="6" fill="#7A5A10"/>
+      <rect x="100" y="155" width="18" height="34" rx="6" fill="#7A5A10"/>
+      <rect x="126" y="152" width="18" height="36" rx="6" fill="#7A5A10"/>
+      <!-- hooves -->
+      <rect x="46" y="184" width="22" height="8" rx="4" fill="#2A1005"/>
+      <rect x="72" y="185" width="22" height="8" rx="4" fill="#2A1005"/>
+      <rect x="98" y="185" width="22" height="8" rx="4" fill="#2A1005"/>
+      <rect x="124" y="184" width="22" height="8" rx="4" fill="#2A1005"/>
+      <!-- DECORATIONS on horse -->
+      <!-- saddle cloth -->
+      <path d="M50 100 Q90 88 130 100 Q130 130 90 135 Q50 130 50 100Z" fill="#A52840"/>
+      <path d="M50 100 Q90 88 130 100 Q130 130 90 135 Q50 130 50 100Z" fill="none" stroke="#C8942A" stroke-width="2"/>
+      <!-- saddle cloth patterns -->
+      <circle cx="90" cy="112" r="8" fill="none" stroke="#C8942A" stroke-width="1.5"/>
+      <circle cx="90" cy="112" r="4" fill="#C8942A" opacity=".6"/>
+      <path d="M65 108 L75 118 L65 118Z" fill="#C8942A" opacity=".5"/>
+      <path d="M105 108 L115 118 L115 108Z" fill="#C8942A" opacity=".5"/>
+      <!-- garland on neck -->
+      <path d="M136 80 Q148 65 155 50" fill="none" stroke="#FF9933" stroke-width="3" opacity=".7"/>
+      <!-- forehead ornament -->
+      <path d="M148 18 Q152 10 155 5 Q158 10 162 18" fill="none" stroke="#C8942A" stroke-width="2"/>
+      <circle cx="155" cy="5" r="4" fill="#E8B84B"/>
+      <!-- anklets -->
+      <rect x="46" y="150" width="22" height="4" rx="2" fill="#C8942A"/>
+      <rect x="72" y="153" width="22" height="4" rx="2" fill="#C8942A"/>
+      <rect x="98" y="153" width="22" height="4" rx="2" fill="#C8942A"/>
+      <rect x="124" y="150" width="22" height="4" rx="2" fill="#C8942A"/>
+      <!-- GROOM ON HORSE -->
+      <circle cx="108" cy="68" r="12" fill="#C8845A"/>
+      <!-- turban -->
+      <ellipse cx="108" cy="58" rx="14" ry="6" fill="#7B1C2E"/>
+      <rect x="94" y="53" width="28" height="9" rx="4" fill="#7B1C2E"/>
+      <ellipse cx="108" cy="53" rx="10" ry="4" fill="#A52840"/>
+      <circle cx="108" cy="50" r="3" fill="#C8942A"/>
+      <!-- kalgi (brooch) -->
+      <path d="M118 50 Q122 40 120 34" fill="none" stroke="#C8942A" stroke-width="2"/>
+      <ellipse cx="120" cy="33" rx="3" ry="5" fill="#C8942A"/>
+      <!-- sherwani -->
+      <rect x="98" y="80" width="20" height="22" rx="4" fill="#1A0A05"/>
+      <circle cx="108" cy="88" r="1.5" fill="#C8942A"/>
+      <circle cx="108" cy="94" r="1.5" fill="#C8942A"/>
+      <!-- eyes -->
+      <circle cx="104" cy="67" r="3" fill="#2A1005"/><circle cx="104" cy="67" r="1.5" fill="#fff"/>
+      <circle cx="113" cy="67" r="3" fill="#2A1005"/><circle cx="113" cy="67" r="1.5" fill="#fff"/>
+      <!-- smile -->
+      <path d="M104 73 Q108 77 113 73" fill="none" stroke="#7A3A1A" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Decorative flags/banners -->
+    <g fill="#C8942A" opacity=".5">
+      <path d="M0 0 L0 50 L20 40 L0 0Z" transform="translate(10,5)"/>
+      <path d="M0 0 L0 50 L20 40 L0 0Z" transform="translate(50,2)"/>
+      <path d="M0 0 L0 50 L20 40 L0 0Z" transform="translate(1130,5)"/>
+      <path d="M0 0 L0 50 L20 40 L0 0Z" transform="translate(1160,2)"/>
+    </g>
+
+    <!-- Torches on sides -->
+    <g fill="none">
+      <rect x="15" y="100" width="8" height="50" rx="3" fill="#8B6914"/>
+      <ellipse cx="19" cy="96" rx="8" ry="12" fill="#FF9933"/>
+      <ellipse cx="19" cy="92" rx="5" ry="8" fill="#FFE066"/>
+      <rect x="1175" y="100" width="8" height="50" rx="3" fill="#8B6914"/>
+      <ellipse cx="1179" cy="96" rx="8" ry="12" fill="#FF9933"/>
+      <ellipse cx="1179" cy="92" rx="5" ry="8" fill="#FFE066"/>
+    </g>
+
+    <!-- Label -->
+    <text x="600" y="200" text-anchor="middle" fill="rgba(232,184,75,.7)" font-family="Georgia,serif" font-size="11" letter-spacing="4" font-style="italic">✦ The Grand Procession ✦</text>
+  </svg>
+</div>
+
+<!-- ═══════════════════ EVENTS ═══════════════════ -->
+<section id="events" class="events" style="background:#FDF6E9">
+  <!-- Door garland toran — top of events -->
+  <img src="images/doorDecoration.png" alt="" aria-hidden="true" class="deco-garland deco-garland--section">
+  <!-- faint alpona corner decoration — matches When Bengal Met Jhansi -->
+  <svg style="position:absolute;top:0;left:0;opacity:.05;pointer-events:none" width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#C8942A">
+      <circle cx="0" cy="0" r="80" fill="none" stroke="#C8942A" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="55" fill="none" stroke="#C8942A" stroke-width="1"/>
+      <path d="M0 -80 Q20 -40 0 0 Q-20 -40 0 -80Z"/>
+      <path d="M80 0 Q40 20 0 0 Q40 -20 80 0Z"/>
+      <path d="M0 -55 Q14 -28 0 0 Q-14 -28 0 -55Z" fill="none" stroke="#C8942A" stroke-width="1"/>
+    </g>
+  </svg>
+  <svg style="position:absolute;bottom:0;right:0;opacity:.05;pointer-events:none;transform:rotate(180deg)" width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#C8942A">
+      <circle cx="0" cy="0" r="80" fill="none" stroke="#C8942A" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="55" fill="none" stroke="#C8942A" stroke-width="1"/>
+      <path d="M0 -80 Q20 -40 0 0 Q-20 -40 0 -80Z"/>
+      <path d="M80 0 Q40 20 0 0 Q40 -20 80 0Z"/>
+    </g>
+  </svg>
+  <div class="section-header reveal">
+    <p class="section-label-light" data-i18n="events-label">✦ The Celebrations ✦</p>
+    <h2 class="section-title-light" data-i18n="events-title">Save the Dates</h2>
+  </div>
+  <style>
+    .ev-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;max-width:1100px;margin:0 auto 48px;border:1px solid rgba(139,90,43,.22);border-radius:12px;overflow:hidden}
+    .ev-card{padding:32px 24px 28px;border-right:1px solid rgba(139,90,43,.18);background:#FDF6E9;position:relative;overflow:hidden}
+    .ev-card::before{content:'';position:absolute;inset:0;background-size:cover;background-position:center;opacity:0.11;pointer-events:none;transition:opacity .4s ease}
+    .ev-card:hover::before{opacity:0.38}
+    .ev-card--haldi::before{background-image:url('images/haldi.jpeg')}
+    .ev-card--sangeet::before{background-image:url('images/sangeet.jpeg')}
+    .ev-card--baraat::before{background-image:url('images/baraat.jpeg')}
+    .ev-card--wedding::before{background-image:url('images/wedding.jpeg')}
+    .ev-card > *{position:relative;z-index:1}
+    .ev-card:last-child{border-right:none}
+    .ev-icon{font-size:32px;margin-bottom:16px;display:block}
+    .ev-title{font-family:'Cormorant Garamond',serif;font-size:clamp(20px,2.2vw,27px);font-style:italic;font-weight:700;color:#3A1402;margin:0 0 6px;line-height:1.25}
+    .ev-date{font-family:'Jost',sans-serif;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#B8721A;margin:0 0 16px;font-weight:600}
+    .ev-badge{display:inline-block;border:1px solid rgba(184,114,26,.55);border-radius:20px;padding:5px 16px;font-family:'Cormorant Garamond',serif;font-size:14px;font-style:italic;color:rgba(58,20,2,.75);margin-bottom:16px;font-weight:600}
+    .ev-shlok{font-family:'Cormorant Garamond',serif;font-size:15px;color:#B8721A;font-style:italic;line-height:1.8;margin-bottom:10px;font-weight:600}
+    .ev-list{list-style:none;padding:0;margin:0}
+    .ev-list li{font-family:'Cormorant Garamond',serif;font-size:16px;color:rgba(58,20,2,.8);line-height:1.6;padding:5px 0 5px 20px;position:relative;font-style:italic;font-weight:500}
+    .ev-list li::before{content:'—';position:absolute;left:0;color:rgba(184,114,26,.7);font-style:normal;font-weight:600}
+    @media(max-width:768px){.ev-grid{grid-template-columns:1fr 1fr}.ev-card:nth-child(2){border-right:none}.ev-card:nth-child(3){border-top:1px solid rgba(139,90,43,.18)}.ev-card:nth-child(4){border-top:1px solid rgba(139,90,43,.18);border-right:none}}
+    @media(max-width:480px){.ev-grid{grid-template-columns:1fr}.ev-card{border-right:none;border-bottom:1px solid rgba(139,90,43,.18)}.ev-card:last-child{border-bottom:none}}
+  </style>
+
+  <!-- 4-column event cards -->
+  <div class="ev-grid reveal">
+
+    <!-- ── Haldi ── -->
+    <div class="ev-card ev-card--haldi">
+      <span class="ev-icon">🌼</span>
+      <h3 class="ev-title">Haldi &amp; Fun Activities</h3>
+      <p class="ev-date">28 January &nbsp;·&nbsp; 12:00 PM</p>
+      <ul class="ev-list">
+        <li>Haldi on faces (and clothes, and walls)</li>
+        <li>Random dancing, choreography very optional</li>
+        <li>Questionable singing talent on full display</li>
+        <li>Relatives you've never met calling you <em>beta</em></li>
+      </ul>
+    </div>
+
+    <!-- ── Sangeet ── -->
+    <div class="ev-card ev-card--sangeet">
+      <span class="ev-icon">🎵</span>
+      <h3 class="ev-title">Sangeet &amp; Engagement</h3>
+      <p class="ev-date">28 January &nbsp;·&nbsp; 7:00 PM</p>
+      <ul class="ev-list">
+        <li>Dance performances (rehearsed &amp; otherwise)</li>
+        <li>Bollywood bops, wall to wall</li>
+        <li>Open DJ</li>
+      </ul>
+    </div>
+
+    <!-- ── Baraat ── -->
+    <div class="ev-card ev-card--baraat">
+      <span class="ev-icon">🐎</span>
+      <h3 class="ev-title">Barat</h3>
+      <p class="ev-date">29 January &nbsp;·&nbsp; 6:00 PM</p>
+      <p class="ev-badge">Groom's side only, obviously 😂</p>
+      <ul class="ev-list">
+        <li>Dancing in the middle of the road</li>
+        <li>Mild traffic confusion for everyone nearby</li>
+        <li>The groom pretending to be perfectly calm</li>
+      </ul>
+    </div>
+
+    <!-- ── Wedding ── -->
+    <div class="ev-card ev-card--wedding">
+      <span class="ev-icon">❤️</span>
+      <h3 class="ev-title">Wedding Ceremony</h3>
+      <p class="ev-date">29 January &nbsp;·&nbsp; 8:00 PM</p>
+      <p class="ev-shlok">सहनाववतु सहनौभुनक्तु सहवीर्यं करवावहै</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:500;color:rgba(58,20,2,.8);font-style:italic;line-height:1.7">The moment everyone, including pandit ji, has been patiently waiting for. Tissues recommended. Cameras mandatory.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════ HALDI SCENE ILLUSTRATION ═══════ -->
+<div class="haldi-band">
+  <svg viewBox="0 0 1200 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" style="display:block;width:100%;background:#F5C842">
+    <!-- Ground -->
+    <rect y="155" width="1200" height="45" fill="#E8A800"/>
+    <!-- Rangoli on ground -->
+    <g transform="translate(600,165)" opacity=".35">
+      <circle cx="0" cy="0" r="30" fill="none" stroke="#fff" stroke-width="1"/>
+      <circle cx="0" cy="0" r="20" fill="none" stroke="#FF9933" stroke-width="1"/>
+      <circle cx="0" cy="0" r="10" fill="#FF9933"/>
+      <path d="M0 -30 L5 -15 L0 -20 L-5 -15Z" fill="#A52840"/><path d="M0 30 L5 15 L0 20 L-5 15Z" fill="#A52840"/>
+      <path d="M-30 0 L-15 5 L-20 0 L-15 -5Z" fill="#A52840"/><path d="M30 0 L15 5 L20 0 L15 -5Z" fill="#A52840"/>
+    </g>
+
+    <!-- HALDI BOWLS (3) -->
+    <g transform="translate(180,90)">
+      <!-- big brass bowl -->
+      <path d="M-35 30 Q-40 50 40 50 Q42 30 35 30Z" fill="#C8942A"/>
+      <ellipse cx="0" cy="30" rx="36" ry="12" fill="#E8B84B"/>
+      <!-- haldi paste inside -->
+      <ellipse cx="0" cy="28" rx="30" ry="9" fill="#F5C842"/>
+      <!-- shine -->
+      <ellipse cx="-8" cy="26" rx="8" ry="3" fill="rgba(255,255,255,.3)"/>
+      <!-- bowl stand/base -->
+      <ellipse cx="0" cy="50" rx="20" ry="5" fill="#B8821A"/>
+      <rect x="-8" y="50" width="16" height="8" rx="3" fill="#B8821A"/>
+      <!-- splatter drops -->
+      <circle cx="50" cy="40" r="5" fill="#F5C842" opacity=".7"/>
+      <circle cx="60" cy="25" r="3" fill="#F5C842" opacity=".6"/>
+      <circle cx="-45" cy="35" r="4" fill="#F5C842" opacity=".7"/>
+      <circle cx="-55" cy="20" r="3" fill="#F5C842" opacity=".5"/>
+    </g>
+    <g transform="translate(350,100)">
+      <path d="M-25 22 Q-28 38 28 38 Q30 22 25 22Z" fill="#C8942A"/>
+      <ellipse cx="0" cy="22" rx="26" ry="9" fill="#E8B84B"/>
+      <ellipse cx="0" cy="20" rx="21" ry="7" fill="#F5C842"/>
+      <ellipse cx="0" cy="38" rx="14" ry="4" fill="#B8821A"/>
+    </g>
+    <g transform="translate(480,95)">
+      <path d="M-20 18 Q-22 30 22 30 Q24 18 20 18Z" fill="#C8942A"/>
+      <ellipse cx="0" cy="18" rx="21" ry="7" fill="#E8B84B"/>
+      <ellipse cx="0" cy="16" rx="17" ry="5.5" fill="#F5C842"/>
+      <ellipse cx="0" cy="30" rx="11" ry="3" fill="#B8821A"/>
+    </g>
+
+    <!-- Leaf decorations -->
+    <g fill="#3B6D11" opacity=".6">
+      <path d="M550 130 Q570 100 590 130 Q570 120 550 130Z"/>
+      <path d="M560 130 Q575 115 580 130 Q570 123 560 130Z"/>
+      <path d="M650 120 Q680 90 700 125 Q675 112 650 120Z"/>
+    </g>
+
+    <!-- BRIDE getting haldi applied (left side) -->
+    <g transform="translate(100,20)">
+      <!-- stool/piri -->
+      <rect x="-20" y="115" width="40" height="8" rx="4" fill="#8B6914"/>
+      <rect x="-15" y="123" width="6" height="18" rx="3" fill="#7A5A10"/>
+      <rect x="9" y="123" width="6" height="18" rx="3" fill="#7A5A10"/>
+      <!-- body seated -->
+      <path d="M-18 85 Q-20 115 20 115 Q20 85 0 75Z" fill="#C8942A"/><!-- lehenga -->
+      <rect x="-12" y="55" width="24" height="35" rx="5" fill="#A52840"/><!-- blouse -->
+      <!-- arm receiving haldi -->
+      <path d="M12 70 Q30 65 35 75 Q38 82 28 82 Q18 82 12 78" fill="#C8845A"/>
+      <!-- haldi on arm -->
+      <path d="M20 68 Q30 66 35 74 Q30 72 20 70Z" fill="#F5C842" opacity=".8"/>
+      <!-- head -->
+      <circle cx="0" cy="42" r="18" fill="#C8845A"/>
+      <!-- hair -->
+      <path d="M-16 36 Q-18 20 0 18 Q18 16 18 36" fill="#2A1005"/>
+      <!-- bindi -->
+      <circle cx="0" cy="35" r="2.5" fill="#A52840"/>
+      <!-- smile (enjoying haldi lol) -->
+      <path d="M-7 47 Q0 53 7 47" fill="none" stroke="#7A3A1A" stroke-width="1.5" stroke-linecap="round"/>
+      <!-- eyes closed happily -->
+      <path d="M-7 40 Q-4 38 -1 40" fill="none" stroke="#2A1005" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M3 40 Q6 38 9 40" fill="none" stroke="#2A1005" stroke-width="1.2" stroke-linecap="round"/>
+      <!-- dupatta -->
+      <path d="M-18 58 Q-30 80 -28 120" fill="none" stroke="#F2C4B8" stroke-width="6" stroke-linecap="round" opacity=".8"/>
+    </g>
+
+    <!-- AUNTIE applying haldi -->
+    <g transform="translate(240,35)">
+      <rect x="-10" y="110" width="20" height="5" rx="2" fill="#8B6914" opacity=".5"/>
+      <ellipse cx="0" cy="125" rx="18" ry="8" fill="#7B1C2E" opacity=".7"/><!-- saree bottom -->
+      <rect x="-12" y="75" width="24" height="38" rx="5" fill="#7B1C2E"/><!-- blouse -->
+      <path d="M12 82 Q28 70 30 60" fill="#C8845A" stroke="#B87040" stroke-width="1"/><!-- arm reaching -->
+      <!-- small bowl in hand -->
+      <path d="M25 55 Q22 65 35 65 Q36 55 33 55Z" fill="#C8942A"/>
+      <ellipse cx="30" cy="55" rx="8" ry="3" fill="#E8B84B"/>
+      <ellipse cx="30" cy="53" rx="6" ry="2.5" fill="#F5C842"/>
+      <!-- head -->
+      <circle cx="0" cy="55" r="17" fill="#C8845A"/>
+      <path d="M-16 48 Q0 38 16 48" fill="#2A1005"/>
+      <path d="M-14 44 Q0 36 14 44 Q16 55 -16 55Z" fill="#2A1005"/>
+      <!-- bun -->
+      <circle cx="0" cy="40" r="8" fill="#2A1005"/>
+      <!-- bindi -->
+      <circle cx="0" cy="48" r="2" fill="#A52840"/>
+      <!-- smile -->
+      <path d="M-6 60 Q0 65 6 60" fill="none" stroke="#7A3A1A" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+
+    <!-- GROOM getting haldi (right side) -->
+    <g transform="translate(900,25)">
+      <rect x="-20" y="115" width="40" height="8" rx="4" fill="#8B6914"/>
+      <rect x="-15" y="123" width="6" height="18" rx="3" fill="#7A5A10"/>
+      <rect x="9" y="123" width="6" height="18" rx="3" fill="#7A5A10"/>
+      <rect x="-14" y="58" width="28" height="58" rx="6" fill="#1A0A05"/><!-- kurta -->
+      <circle cx="0" cy="74" r="1.5" fill="#C8942A"/>
+      <circle cx="0" cy="82" r="1.5" fill="#C8942A"/>
+      <path d="M14 68 Q28 64 30 75 Q32 82 22 82 Q14 80 14 74" fill="#C8845A"/>
+      <!-- haldi splat on face -->
+      <circle cx="0" cy="40" r="18" fill="#C8845A"/>
+      <path d="M-15 33 Q0 22 15 33" fill="#2A1005"/>
+      <rect x="-17" y="26" width="34" height="10" rx="5" fill="#2A1005"/><!-- male hair -->
+      <!-- haldi on cheek -->
+      <ellipse cx="10" cy="42" rx="8" ry="5" fill="#F5C842" opacity=".7" transform="rotate(-15 10 42)"/>
+      <!-- shocked face expression -->
+      <circle cx="-6" cy="38" r="4" fill="#2A1005"/><circle cx="-6" cy="38" r="2" fill="#fff"/>
+      <circle cx="8" cy="38" r="4" fill="#2A1005"/><circle cx="8" cy="38" r="2" fill="#fff"/>
+      <path d="M-5 47 Q0 45 5 47" fill="none" stroke="#7A3A1A" stroke-width="1.5" stroke-linecap="round"/><!-- O face -->
+    </g>
+
+    <!-- Dancing figure (relative uncle) -->
+    <g transform="translate(730,30)">
+      <circle cx="0" cy="30" r="16" fill="#C8845A"/>
+      <path d="M-15 25 Q0 15 15 25" fill="#2A1005"/>
+      <!-- open mouthed singing -->
+      <circle cx="-5" cy="28" r="3" fill="#2A1005"/>
+      <circle cx="6" cy="28" r="3" fill="#2A1005"/>
+      <path d="M-7 36 Q0 42 7 36" fill="#A52840"/>
+      <rect x="-14" y="46" width="28" height="50" rx="5" fill="#7B1C2E"/>
+      <!-- arms up dancing -->
+      <path d="M-14 55 Q-35 30 -45 20" fill="none" stroke="#C8845A" stroke-width="8" stroke-linecap="round"/>
+      <path d="M14 55 Q32 28 40 15" fill="none" stroke="#C8845A" stroke-width="8" stroke-linecap="round"/>
+      <rect x="-10" y="96" width="10" height="30" rx="5" fill="#5C1220"/>
+      <rect x="2" y="96" width="10" height="30" rx="5" fill="#5C1220"/>
+      <!-- Music notes -->
+      <text x="50" y="18" fill="#A52840" font-size="16" font-family="serif" opacity=".7">♪</text>
+      <text x="62" y="8" fill="#A52840" font-size="12" font-family="serif" opacity=".5">♫</text>
+    </g>
+
+    <!-- Marigold petals scattered -->
+    <g fill="#FF9933" opacity=".5">
+      <ellipse cx="310" cy="160" rx="6" ry="3" transform="rotate(20 310 160)"/>
+      <ellipse cx="450" cy="150" rx="5" ry="2.5" transform="rotate(-30 450 150)"/>
+      <ellipse cx="800" cy="158" rx="6" ry="3" transform="rotate(10 800 158)"/>
+      <ellipse cx="1050" cy="152" rx="5" ry="2.5" transform="rotate(-20 1050 152)"/>
+      <ellipse cx="950" cy="165" rx="4" ry="2" transform="rotate(35 950 165)"/>
+      <ellipse cx="620" cy="155" rx="5" ry="2.5" transform="rotate(-15 620 155)"/>
+    </g>
+  </svg>
+</div>
+
+<!-- VENUE -->
+<section id="venue" class="venue">
+  <!-- Door garland toran — top of venue -->
+  <img src="images/doorDecoration.png" alt="" aria-hidden="true" class="deco-garland deco-garland--section">
+  <svg class="venue-pattern" viewBox="0 0 400 400" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <defs><pattern id="vp" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M40 5 Q55 20 55 40 Q55 60 40 75 Q25 60 25 40 Q25 20 40 5Z" fill="none" stroke="#E8B84B" stroke-width="0.8"/>
+      <circle cx="40" cy="40" r="6" fill="none" stroke="#E8B84B" stroke-width="0.6"/>
+      <path d="M10 40 Q25 30 40 40 Q55 30 70 40" fill="none" stroke="#E8B84B" stroke-width="0.5"/>
+      <path d="M40 10 Q30 25 40 40 Q30 55 40 70" fill="none" stroke="#E8B84B" stroke-width="0.5"/>
+    </pattern></defs>
+    <rect width="100%" height="100%" fill="url(#vp)"/>
+  </svg>
+  <div class="reveal" style="position:relative;z-index:2">
+    <p class="venue-label" data-i18n="venue-label">✦ Where The Magic Happens ✦</p>
+    <h2 class="venue-title" data-i18n="venue-title">Join Us In</h2>
+    <div class="venue-city" data-i18n="venue-city">Indore, India 🇮🇳</div>
+    <p class="venue-desc" data-i18n="venue-desc">The city of poha and jalebi , now also the meeting ground of Bengal and Uttar Pradesh. Think of it as neutral territory where both families can argue about food equally. Venue is <a href="https://share.google/lqwjLYxANUpIgQKzt" target="_blank" style="color:#D4A843;text-decoration:underline">HR Resort And Hotel</a>. 🗺️</p>
+  </div>
+</section>
+
+<!-- ═══ ALPONA STRIP — Bengali touch ═══ -->
+<div style="background:#FDF6E9;padding:14px 0 0;text-align:center;overflow:hidden;line-height:0">
+  <svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%">
+    <rect width="1200" height="60" fill="#FDF6E9"/>
+    <!-- Alpona (Bengali floor art) repeating pattern -->
+    <g fill="none" stroke="#C8942A" stroke-width="1.2" opacity=".55">
+      <!-- repeat unit every 120px -->
+      <g id="alp">
+        <!-- central lotus -->
+        <circle cx="60" cy="30" r="18"/>
+        <circle cx="60" cy="30" r="10"/>
+        <circle cx="60" cy="30" r="4" fill="#C8942A" stroke="none"/>
+        <!-- petals -->
+        <path d="M60 12 Q65 20 60 26 Q55 20 60 12Z" fill="#C8942A" opacity=".5"/>
+        <path d="M60 34 Q65 42 60 48 Q55 42 60 34Z" fill="#C8942A" opacity=".5"/>
+        <path d="M42 30 Q50 25 56 30 Q50 35 42 30Z" fill="#C8942A" opacity=".5"/>
+        <path d="M64 30 Q70 25 78 30 Q70 35 64 30Z" fill="#C8942A" opacity=".5"/>
+        <!-- diagonal petals -->
+        <path d="M47 17 Q53 22 52 28 Q46 24 47 17Z" fill="#C8942A" opacity=".35"/>
+        <path d="M73 17 Q67 22 68 28 Q74 24 73 17Z" fill="#C8942A" opacity=".35"/>
+        <path d="M47 43 Q53 38 52 32 Q46 36 47 43Z" fill="#C8942A" opacity=".35"/>
+        <path d="M73 43 Q67 38 68 32 Q74 36 73 43Z" fill="#C8942A" opacity=".35"/>
+        <!-- connecting dots -->
+        <circle cx="60" cy="6" r="2" fill="#C8942A" stroke="none"/>
+        <circle cx="60" cy="54" r="2" fill="#C8942A" stroke="none"/>
+        <circle cx="34" cy="30" r="2" fill="#C8942A" stroke="none"/>
+        <circle cx="86" cy="30" r="2" fill="#C8942A" stroke="none"/>
+        <!-- side connectors -->
+        <line x1="0" y1="30" x2="34" y2="30"/>
+        <line x1="86" y1="30" x2="120" y2="30"/>
+        <line x1="60" y1="0" x2="60" y2="6"/>
+        <line x1="60" y1="54" x2="60" y2="60"/>
+      </g>
+      <use href="#alp" transform="translate(120,0)"/>
+      <use href="#alp" transform="translate(240,0)"/>
+      <use href="#alp" transform="translate(360,0)"/>
+      <use href="#alp" transform="translate(480,0)"/>
+      <use href="#alp" transform="translate(600,0)"/>
+      <use href="#alp" transform="translate(720,0)"/>
+      <use href="#alp" transform="translate(840,0)"/>
+      <use href="#alp" transform="translate(960,0)"/>
+      <use href="#alp" transform="translate(1080,0)"/>
+    </g>
+  </svg>
+</div>
+
+<!-- ═══ THE LOVE STORY — Bengali girl meets UP boy ═══ -->
+<section style="background:#FDF6E9;padding:72px 24px;position:relative;overflow:hidden">
+
+  <!-- faint alpona corner decoration -->
+  <svg style="position:absolute;top:0;left:0;opacity:.05;pointer-events:none" width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#C8942A">
+      <circle cx="0" cy="0" r="80" fill="none" stroke="#C8942A" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="55" fill="none" stroke="#C8942A" stroke-width="1"/>
+      <path d="M0 -80 Q20 -40 0 0 Q-20 -40 0 -80Z"/>
+      <path d="M80 0 Q40 20 0 0 Q40 -20 80 0Z"/>
+      <path d="M0 -55 Q14 -28 0 0 Q-14 -28 0 -55Z" fill="none" stroke="#C8942A" stroke-width="1"/>
+    </g>
+  </svg>
+  <svg style="position:absolute;bottom:0;right:0;opacity:.05;pointer-events:none;transform:rotate(180deg)" width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#C8942A">
+      <circle cx="0" cy="0" r="80" fill="none" stroke="#C8942A" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="55" fill="none" stroke="#C8942A" stroke-width="1"/>
+      <path d="M0 -80 Q20 -40 0 0 Q-20 -40 0 -80Z"/>
+      <path d="M80 0 Q40 20 0 0 Q40 -20 80 0Z"/>
+    </g>
+  </svg>
+
+  <div style="max-width:900px;margin:0 auto;position:relative;z-index:1">
+
+    <div class="section-header reveal">
+      <p class="section-label-light" data-i18n="ls-label">✦ পশ্চিমবঙ্গ মিলিত হয় উত্তরপ্রদেশের সাথে ✦</p>
+      <h2 class="section-title-light" data-i18n="ls-title">When Bengal Met Uttar Pradesh</h2>
+      <p style="font-size:14px;color:var(--mid);font-style:italic;margin-top:10px;line-height:1.8" data-i18n="ls-sub">A cross-cultural love story, told honestly with affection, amusement, and mild culinary disagreements.</p>
+    </div>
+
+    <!-- ── Polaroid Photo Strip (dynamically built from manifest.json) ── -->
+    <style>
+      #polaroid-strip-wrap{width:100vw;position:relative;left:50%;transform:translateX(-50%);overflow-x:auto;overflow-y:visible;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:32px 40px 24px;box-sizing:border-box;white-space:nowrap;margin-top:36px;margin-bottom:8px}
+      #polaroid-strip-wrap::-webkit-scrollbar{display:none}
+      .polaroid{display:inline-block;vertical-align:top;background:#fff;padding:10px 10px 42px;box-shadow:0 6px 24px rgba(58,20,2,.2),0 1px 4px rgba(58,20,2,.1);margin:0 12px;white-space:normal;transition:transform .35s ease,box-shadow .35s ease;cursor:default;position:relative;border:1px solid rgba(0,0,0,.06)}
+      .polaroid:hover{box-shadow:0 16px 40px rgba(58,20,2,.3),0 2px 8px rgba(58,20,2,.15);transform:translateY(-6px) rotate(0deg) !important}
+      .polaroid img{display:block;width:200px;height:260px;object-fit:cover}
+      .polaroid .pol-caption{font-family:"Gloria Hallelujah", cursive;font-size:16px;font-weight:600;color:#3A1A05;text-align:center;margin-top:10px;line-height:1.35;word-wrap:break-word;max-width:200px;letter-spacing:.3px}
+    </style>
+    <div id="polaroid-strip-wrap">
+      <div id="polaroid-strip"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Alpona bottom strip -->
+<div style="background:#FDF6E9;padding:0 0 12px;text-align:center;overflow:hidden;line-height:0">
+  <svg viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;transform:scaleY(-1)">
+    <rect width="1200" height="60" fill="#FDF6E9"/>
+    <g fill="none" stroke="#C8942A" stroke-width="1.2" opacity=".55">
+      <use href="#alp" transform="translate(0,0)"/>
+      <use href="#alp" transform="translate(120,0)"/>
+      <use href="#alp" transform="translate(240,0)"/>
+      <use href="#alp" transform="translate(360,0)"/>
+      <use href="#alp" transform="translate(480,0)"/>
+      <use href="#alp" transform="translate(600,0)"/>
+      <use href="#alp" transform="translate(720,0)"/>
+      <use href="#alp" transform="translate(840,0)"/>
+      <use href="#alp" transform="translate(960,0)"/>
+      <use href="#alp" transform="translate(1080,0)"/>
+    </g>
+  </svg>
+</div>
+
+<!-- ═══════ DOLI / BARAT ILLUSTRATION ═══════ -->
+<div class="barat-band">
+  <svg viewBox="0 0 1200 210" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" style="display:block;width:100%;background:#F5E8C8">
+    <!-- Ground -->
+    <rect y="168" width="1200" height="42" fill="#E8D5A0"/>
+    <!-- rangoli strip -->
+    <path d="M0 168 Q30 163 60 168 Q90 173 120 168 Q150 163 180 168 Q210 173 240 168" stroke="#C8942A" stroke-width="1" fill="none" opacity=".4"/>
+
+    <!-- === DOLI (palanquin) === -->
+    <g transform="translate(350,20)">
+      <!-- poles -->
+      <rect x="-20" y="80" width="280" height="8" rx="4" fill="#8B6914"/>
+      <rect x="-20" y="80" width="280" height="8" rx="4" fill="none" stroke="#7A5A10" stroke-width="1"/>
+      <!-- second pole -->
+      <rect x="10" y="120" width="220" height="8" rx="4" fill="#8B6914"/>
+      <!-- DOLI BOX body -->
+      <rect x="30" y="30" width="180" height="100" rx="10" fill="#A52840"/>
+      <!-- gold border -->
+      <rect x="30" y="30" width="180" height="100" rx="10" fill="none" stroke="#C8942A" stroke-width="3"/>
+      <!-- decorative panels -->
+      <rect x="40" y="40" width="70" height="80" rx="6" fill="#7B1C2E"/>
+      <rect x="130" y="40" width="70" height="80" rx="6" fill="#7B1C2E"/>
+      <!-- gold ornaments on panels -->
+      <path d="M75 55 L85 65 L75 75 L65 65Z" fill="#C8942A"/>
+      <path d="M165 55 L175 65 L165 75 L155 65Z" fill="#C8942A"/>
+      <circle cx="75" cy="65" r="5" fill="#E8B84B"/>
+      <circle cx="165" cy="65" r="5" fill="#E8B84B"/>
+      <!-- window/curtain between panels -->
+      <rect x="110" y="40" width="20" height="80" rx="3" fill="#C8942A" opacity=".3"/>
+      <!-- curtain -->
+      <path d="M112 40 Q120 60 112 80 Q120 100 112 120" fill="#F2C4B8" opacity=".7"/>
+      <path d="M128 40 Q120 60 128 80 Q120 100 128 120" fill="#F2C4B8" opacity=".7"/>
+      <!-- BRIDE peeking out -->
+      <circle cx="120" cy="65" r="14" fill="#C8845A"/>
+      <path d="M108 58 Q120 48 132 58" fill="#2A1005"/>
+      <circle cx="115" cy="63" r="3.5" fill="#2A1005"/><circle cx="115" cy="63" r="1.8" fill="#fff"/>
+      <circle cx="125" cy="63" r="3.5" fill="#2A1005"/><circle cx="125" cy="63" r="1.8" fill="#fff"/>
+      <path d="M115 72 Q120 76 125 72" fill="none" stroke="#A52840" stroke-width="1.2" stroke-linecap="round"/>
+      <circle cx="120" cy="56" r="2" fill="#A52840"/><!-- bindi -->
+      <!-- veil / dupatta -->
+      <path d="M107 58 Q100 70 102 90" fill="none" stroke="#F2C4B8" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+      <!-- roof of doli -->
+      <path d="M25 30 Q120 10 215 30" fill="#7B1C2E"/>
+      <path d="M25 30 Q120 10 215 30" fill="none" stroke="#C8942A" stroke-width="2"/>
+      <!-- roof fringe -->
+      <path d="M30 30 L33 42 M46 26 L46 38 M62 22 L62 34 M78 20 L78 32 M94 18 L94 30 M110 17 L110 29 M126 18 L126 30 M142 19 L142 31 M158 21 L158 33 M174 23 L174 35 M190 26 L190 38 M206 29 L206 41" stroke="#E8B84B" stroke-width="2"/>
+      <!-- top ornament -->
+      <path d="M115 10 L120 0 L125 10Z" fill="#C8942A"/>
+      <circle cx="120" cy="0" r="4" fill="#E8B84B"/>
+      <!-- garlands on doli -->
+      <path d="M30 45 Q120 60 210 45" fill="none" stroke="#FF9933" stroke-width="2.5" opacity=".7"/>
+      <path d="M30 100 Q120 115 210 100" fill="none" stroke="#FF9933" stroke-width="2" opacity=".6"/>
+
+      <!-- BEARERS (4 people carrying) -->
+      <!-- front-left bearer -->
+      <g transform="translate(-10,80)">
+        <circle cx="0" cy="-30" r="12" fill="#B87040"/>
+        <rect x="-8" y="-18" width="16" height="35" rx="5" fill="#1A3A5C"/>
+        <rect x="-5" y="-30" width="10" height="6" rx="3" fill="#C8942A"/><!-- cap -->
+        <rect x="-8" y="17" width="7" height="20" rx="3" fill="#0F2A40"/>
+        <rect x="2" y="17" width="7" height="20" rx="3" fill="#0F2A40"/>
+        <!-- arms up holding pole -->
+        <path d="M8 -8 Q14 -16 20 -12" fill="none" stroke="#B87040" stroke-width="5" stroke-linecap="round"/>
+      </g>
+      <!-- front-right bearer -->
+      <g transform="translate(240,80)">
+        <circle cx="0" cy="-30" r="12" fill="#B87040"/>
+        <rect x="-8" y="-18" width="16" height="35" rx="5" fill="#1A3A5C"/>
+        <rect x="-5" y="-30" width="10" height="6" rx="3" fill="#C8942A"/>
+        <rect x="-8" y="17" width="7" height="20" rx="3" fill="#0F2A40"/>
+        <rect x="2" y="17" width="7" height="20" rx="3" fill="#0F2A40"/>
+        <path d="M-8 -8 Q-14 -16 -20 -12" fill="none" stroke="#B87040" stroke-width="5" stroke-linecap="round"/>
+      </g>
+      <!-- back-left bearer -->
+      <g transform="translate(20,120)">
+        <circle cx="0" cy="-30" r="11" fill="#C8845A"/>
+        <rect x="-7" y="-18" width="14" height="32" rx="5" fill="#A52840"/>
+        <rect x="-4" y="-30" width="8" height="5" rx="2.5" fill="#7B1C2E"/>
+        <rect x="-7" y="14" width="6" height="18" rx="3" fill="#7B1220"/>
+        <rect x="2" y="14" width="6" height="18" rx="3" fill="#7B1220"/>
+        <path d="M7 -8 Q12 -15 18 -11" fill="none" stroke="#C8845A" stroke-width="5" stroke-linecap="round"/>
+      </g>
+      <!-- back-right bearer -->
+      <g transform="translate(200,120)">
+        <circle cx="0" cy="-30" r="11" fill="#C8845A"/>
+        <rect x="-7" y="-18" width="14" height="32" rx="5" fill="#A52840"/>
+        <rect x="-4" y="-30" width="8" height="5" rx="2.5" fill="#7B1C2E"/>
+        <rect x="-7" y="14" width="6" height="18" rx="3" fill="#7B1220"/>
+        <rect x="2" y="14" width="6" height="18" rx="3" fill="#7B1220"/>
+        <path d="M-7 -8 Q-12 -15 -18 -11" fill="none" stroke="#C8845A" stroke-width="5" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- Marigold flowers scattered around -->
+    <g>
+      <g fill="#FF9933" transform="translate(100,130)">
+        <circle cx="0" cy="0" r="8"/><circle cx="-7" cy="-6" r="5"/><circle cx="7" cy="-6" r="5"/>
+        <circle cx="0" cy="-9" r="5"/><circle cx="-9" cy="2" r="5"/><circle cx="9" cy="2" r="5"/>
+        <circle cx="0" cy="0" r="4" fill="#E8B84B"/>
+      </g>
+      <g fill="#FF9933" transform="translate(1050,125)">
+        <circle cx="0" cy="0" r="7"/><circle cx="-6" cy="-5" r="4"/><circle cx="6" cy="-5" r="4"/>
+        <circle cx="0" cy="-8" r="4"/><circle cx="-8" cy="2" r="4"/><circle cx="8" cy="2" r="4"/>
+        <circle cx="0" cy="0" r="3.5" fill="#E8B84B"/>
+      </g>
+      <g fill="#FF9933" transform="translate(180,150)">
+        <circle cx="0" cy="0" r="5"/><circle cx="-4" cy="-4" r="3"/><circle cx="4" cy="-4" r="3"/>
+        <circle cx="0" cy="-6" r="3"/><circle cx="-5" cy="1" r="3"/><circle cx="5" cy="1" r="3"/>
+        <circle cx="0" cy="0" r="2.5" fill="#E8B84B"/>
+      </g>
+    </g>
+
+    <!-- Shehnai player on right -->
+    <g transform="translate(980,60)">
+      <circle cx="0" cy="0" r="15" fill="#C8845A"/>
+      <path d="M-14 -6 Q0 -16 14 -6" fill="#2A1005"/>
+      <rect x="-12" y="-14" width="24" height="8" rx="4" fill="#7B1C2E"/>
+      <circle cx="-5" cy="-2" r="3.5" fill="#2A1005"/>
+      <circle cx="6" cy="-2" r="3.5" fill="#2A1005"/>
+      <rect x="-10" y="16" width="20" height="42" rx="5" fill="#7B1C2E"/>
+      <!-- shehnai instrument -->
+      <path d="M10 20 Q28 15 45 25 Q52 30 55 40 Q60 45 58 48" fill="none" stroke="#C8942A" stroke-width="4" stroke-linecap="round"/>
+      <ellipse cx="60" cy="49" rx="6" ry="4" fill="#C8942A"/>
+      <!-- arm -->
+      <path d="M10 22 Q20 18 30 22" fill="none" stroke="#C8845A" stroke-width="6" stroke-linecap="round"/>
+      <!-- legs -->
+      <rect x="-10" y="58" width="9" height="28" rx="4" fill="#5C1220"/>
+      <rect x="2" y="58" width="9" height="28" rx="4" fill="#5C1220"/>
+    </g>
+
+    <!-- Dhol drummer -->
+    <g transform="translate(1080,65)">
+      <circle cx="0" cy="0" r="14" fill="#C8845A"/>
+      <path d="M-13 -6 Q0 -15 13 -6" fill="#2A1005"/>
+      <rect x="-12" y="14" width="24" height="40" rx="5" fill="#1A0A05"/>
+      <!-- dhol drum -->
+      <rect x="-30" y="25" width="28" height="20" rx="8" fill="#8B6914"/>
+      <ellipse cx="-16" cy="25" rx="10" ry="6" fill="#C8942A"/>
+      <ellipse cx="-16" cy="45" rx="10" ry="6" fill="#A52840"/>
+      <!-- drum sticks -->
+      <path d="M-16 22 Q-25 10 -28 5" fill="none" stroke="#5C3A08" stroke-width="3" stroke-linecap="round"/>
+      <path d="M10 30 Q22 20 26 14" fill="none" stroke="#5C3A08" stroke-width="3" stroke-linecap="round"/>
+      <!-- arm reaching dhol -->
+      <path d="M-10 22 Q-18 18 -24 22" fill="none" stroke="#C8845A" stroke-width="6" stroke-linecap="round"/>
+      <rect x="-10" y="54" width="9" height="26" rx="4" fill="#111"/>
+      <rect x="2" y="54" width="9" height="26" rx="4" fill="#111"/>
+      <!-- eyes happy -->
+      <circle cx="-5" cy="-3" r="3" fill="#2A1005"/><circle cx="-5" cy="-3" r="1.5" fill="#fff"/>
+      <circle cx="5" cy="-3" r="3" fill="#2A1005"/><circle cx="5" cy="-3" r="1.5" fill="#fff"/>
+      <path d="M-5 6 Q0 10 5 6" fill="none" stroke="#7A3A1A" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Label -->
+    <text x="160" y="196" text-anchor="middle" fill="rgba(123,28,46,.55)" font-family="Georgia,serif" font-size="11" letter-spacing="3" font-style="italic">✦ Doli ✦</text>
+    <text x="600" y="196" text-anchor="middle" fill="rgba(123,28,46,.45)" font-family="Georgia,serif" font-size="10" letter-spacing="4" font-style="italic">The bride arrives in style 👸</text>
+  </svg>
+</div>
+
+<!-- EXPECT -->
+<section id="expect" class="expect-section" style="background:rgb(74, 26, 5)">
+  <div class="section-header reveal">
+    <p class="section-label" data-i18n="expect-label">✦ A Friendly Briefing ✦</p>
+    <h2 class="section-title" data-i18n="expect-title">What to Expect</h2>
+  </div>
+  <div class="expect-grid">
+    <div class="expect-card yes reveal">
+      <div class="expect-card-title" data-i18n="expect-yes-title">✅ Things You'll Find</div>
+      <ul class="expect-list">
+        <li><span>✅</span> <span data-i18n="ex-y1">Fun guaranteed and a lot of traditions</span></li>
+        <li><span>✅</span> <span data-i18n="ex-y2">UP-style shehnai AND Bengali ululation simultaneously</span></li>
+        <li><span>✅</span> <span data-i18n="ex-y3">Mishti doi <em>and</em> gulab jamun on the same table (history)</span></li>
+        <li><span>✅</span> <span data-i18n="ex-y4">Loud, glorious music (No English)</span></li>
+        <li><span>✅</span> <span data-i18n="ex-y5">Dancing all night long, just kidding it's not allowed after 11pm</span></li>
+        <li><span>✅</span> <span data-i18n="ex-y7">Sindoor, shankha, pheras the full beautiful package</span></li>
+        <li><span>✅</span> <span data-i18n="ex-y8">Endless photos of you looking great</span></li>
+      </ul>
+    </div>
+    <div class="expect-card no reveal">
+      <div class="expect-card-title" data-i18n="expect-no-title">❌ Things You Won't Find</div>
+      <ul class="expect-list">
+        <li><span>❌</span> <span data-i18n="ex-n1">Peace and quiet (not even slightly)</span></li>
+        <li><span>❌</span> <span data-i18n="ex-n2">Alcohol, dry celebration, very wet with emotions</span></li>
+        <li><span>❌</span> <span data-i18n="ex-n3">Non Veg food and Vegan food</span></li>
+        <li><span>❌</span> <span data-i18n="ex-n4">Agreement on whose state has better food (never)</span></li>
+        <li><span>❌</span> <span data-i18n="ex-n5">A short guest list, have you met a UP family?</span></li>
+      </ul>
+      <p style="margin-top:14px;font-size:12px;color:var(--mid);font-style:italic;line-height:1.7" data-i18n="ex-joke">No alcohol means you'll actually remember the Bhojpuri song an uncle made you dance to. Worth it. 🌟</p>
+    </div>
+  </div>
+</section>
+
+<!-- marigold strip -->
+<div class="marigold-strip" style="color:rgba(58,20,2,.65)">✦ &nbsp; ❈ &nbsp; ✦ &nbsp; ❈ &nbsp; ✦ &nbsp; ❈ &nbsp; ✦ &nbsp; ❈ &nbsp; ✦ &nbsp; ❈ &nbsp; ✦ &nbsp; ❈ &nbsp; ✦</div>
+
+<!-- RSVP -->
+<section id="rsvp" class="rsvp">
+  <!-- Door garland toran — top of RSVP -->
+  <img src="images/doorDecoration.png" alt="" aria-hidden="true" class="deco-garland deco-garland--section">
+  <div class="reveal">
+    <p class="rsvp-eyebrow" data-i18n="rsvp-eyebrow">✦ You're Invited! ✦</p>
+    <h2 class="rsvp-title" data-i18n="rsvp-title">Will You Join Us?</h2>
+    <p class="rsvp-note" data-i18n="rsvp-note">"Please let us know you're coming so we can accurately estimate how many gulab jamuns to order."</p>
+    <div class="rsvp-form" id="rsvpForm">
+      <input type="text" class="rsvp-input" placeholder="Your Full Name" id="rsvpName"/>
+      <input type="text" class="rsvp-input" placeholder="Mobile Number / Email" id="rsvpContact"/>
+      <input type="number" class="rsvp-input" placeholder="Number of Guests (including yourself)" id="rsvpGuests" min="1" max="20"/>
+      <div class="rsvp-radio-group">
+        <label class="rsvp-rl"><input type="radio" name="att" value="yes"> <span data-i18n="rsvp-yes">🎉 Absolutely Coming!</span></label>
+        <label class="rsvp-rl"><input type="radio" name="att" value="maybe"> <span data-i18n="rsvp-maybe">🤔 Maybe...</span></label>
+        <label class="rsvp-rl"><input type="radio" name="att" value="no"> <span data-i18n="rsvp-no">😢 Can't Make It</span></label>
+      </div>
+      <button class="rsvp-btn" data-i18n="rsvp-btn" onclick="submitRSVP()">Send My RSVP 💌</button>
+    </div>
+    <div class="rsvp-success" id="rsvpSuccess">
+      <div style="font-size:30px;margin-bottom:10px">🎊</div>
+      <div id="rsvpMsg">Thank you! We'll save you a seat and extra gulab jamuns.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-names">Mohit & Rupanjana</div>
+  <div class="footer-dates" data-i18n="footer-dates">28 – 29 January • Indore, India</div>
+  <p class="footer-note" data-i18n="footer-note">"Made with love, mishti doi, gulab jamun, and a slightly stressed cross-cultural wedding planning team."</p>
+  <p style="font-size:12px;color:rgba(255,255,255,.3);margin-top:6px;font-style:italic" data-i18n="footer-joke">Reading this at 2am wondering what to wear? Something bright and festive. You'll thank us later.</p>
+  <span class="footer-heart">♥</span>
+</footer>
+
+<!-- ── LANGUAGE SWITCHER FAB ── -->
+<div class="lang-fab" id="langFab">
+  <button class="lang-btn" onclick="toggleLangMenu()" id="langToggleBtn">
+    <span class="globe">&#127758;</span> <span id="langBtnLabel">English</span>
+  </button>
+  <div class="lang-dropdown" id="langDropdown">
+    <button class="lang-opt active" onclick="setLang('en')">English</button>
+    <button class="lang-opt" onclick="setLang('hi')">&#x939;&#x93F;&#x902;&#x926;&#x940;</button>
+    <button class="lang-opt" onclick="setLang('bn')">&#x9AC;&#x9BE;&#x982;&#x9B2;&#x9BE;</button>
+  </div>
+</div>
+
+<!-- Safe JSON translation store — no JS string escaping issues -->
+<script type="application/json" id="i18n-data">
+{
+  "nav-events":  {"en":"Events",   "hi":"\u0915\u093e\u0930\u094d\u092f\u0915\u094d\u0930\u092e",     "bn":"\u0985\u09a8\u09c1\u09b7\u09cd\u09a0\u09be\u09a8"},
+  "nav-venue":   {"en":"Venue",    "hi":"\u0938\u094d\u0925\u093e\u0928",         "bn":"\u09b8\u09cd\u09a5\u09be\u09a8"},
+  "nav-expect":  {"en":"Expect",   "hi":"\u0915\u094d\u092f\u093e \u0909\u092e\u094d\u092e\u0940\u0926 \u0930\u0916\u0947\u0902", "bn":"\u09aa\u09cd\u09b0\u09a4\u09cd\u09af\u09be\u09b6\u09be"},
+  "nav-rsvp":    {"en":"RSVP",     "hi":"\u0909\u092a\u0938\u094d\u0925\u093f\u0924\u093f \u0926\u0930\u094d\u091c \u0915\u0930\u0947\u0902", "bn":"\u0986\u09ae\u09a8\u09cd\u09a4\u09cd\u09b0\u09a3 \u09a8\u09bf\u09b6\u09cd\u099a\u09bf\u09a4 \u0995\u09b0\u09c1\u09a8"},
+
+  "hero-badge":  {"en":"&#10048; A Wedding Invitation &#10048;","hi":"&#10048; \u090f\u0915 \u0936\u093e\u0926\u0940 \u0915\u093e \u0928\u093f\u092e\u0902\u0924\u094d\u0930\u0923 &#10048;","bn":"&#10048; \u098f\u0995\u099f\u09bf \u09ac\u09bf\u09ac\u09be\u09b9\u09c7\u09b0 \u0986\u09ae\u09a8\u09cd\u09a4\u09cd\u09b0\u09a3 &#10048;"},
+  "hero-tagline":{"en":"&ldquo;Two families, one celebration, and approximately 47,000 decibels of happiness.<br>One side brings the mishti doi. The other brings the baraati. Both bring chaos &mdash; lovingly.&rdquo;","hi":"&ldquo;\u0926\u094b \u092a\u0930\u093f\u0935\u093e\u0930, \u090f\u0915 \u091c\u0936\u094d\u0928, \u0914\u0930 \u0932\u0917\u092d\u0917 47,000 \u0921\u0947\u0938\u093f\u092c\u0932 \u0915\u0940 \u0916\u0941\u0936\u0940\u0964<br>\u090f\u0915 \u0924\u0930\u092b \u092e\u093f\u0937\u094d\u091f\u0940 \u0926\u094b\u0908 \u0906\u090f\u0917\u0940, \u0926\u0942\u0938\u0930\u0940 \u0924\u0930\u092b \u092c\u093e\u0930\u093e\u0924\u0940 &mdash; \u0914\u0930 \u0926\u094b\u0928\u094b\u0902 \u0924\u0930\u092b \u0938\u0947 \u092a\u094d\u092f\u093e\u0930\u0940 \u0927\u0942\u092e-\u0927\u093e\u092e\u0964&rdquo;","bn":"&ldquo;\u09a6\u09c1\u0987 \u09aa\u09b0\u09bf\u09ac\u09be\u09b0, \u098f\u0995 \u0989\u09ce\u09b8\u09ac, \u0986\u09b0 \u09aa\u09cd\u09b0\u09be\u09af\u09bc \u09ea\u09ed,\u09e6\u09e6\u09e6 \u09a1\u09c7\u09b8\u09bf\u09ac\u09c7\u09b2 \u0986\u09a8\u09a8\u09cd\u09a6\u0964<br>\u098f\u0995\u09a6\u09bf\u0995 \u09a5\u09c7\u0995\u09c7 \u09ae\u09bf\u09b7\u09cd\u099f\u09bf \u09a6\u0987 \u0986\u09b8\u09ac\u09c7, \u0985\u09a8\u09cd\u09af\u09a6\u09bf\u0995 \u09a5\u09c7\u0995\u09c7 \u09ac\u09b0\u09af\u09be\u09a4\u09cd\u09b0\u09be &mdash; \u09a6\u09c1\u09a6\u09bf\u0995 \u09a5\u09c7\u0995\u09c7\u0987 \u09ad\u09be\u09b2\u09cb\u09ac\u09be\u09b8\u09be\u09df \u09ad\u09b0\u09be \u09b9\u09b0\u09a4\u09be\u09b2\u0964&rdquo;"},
+  "hero-sub":    {"en":"A boy from Jhansi &amp; a girl from Bengal walk into a wedding&hellip;<br>and everyone lived happily &mdash; and very loudly &mdash; ever after. &#127800;","hi":"\u0917\u094b\u0930\u0916\u092a\u0941\u0930 \u0915\u093e \u090f\u0915 \u0932\u0921\u093c\u0915\u093e \u0914\u0930 \u092c\u0902\u0917\u093e\u0932 \u0915\u0940 \u090f\u0915 \u0932\u0921\u093c\u0915\u0940 \u0915\u0940 \u0936\u093e\u0926\u0940 \u0939\u094b \u0930\u0939\u0940 \u0939\u0948&hellip;<br>\u0914\u0930 \u0938\u092c \u0916\u0941\u0936\u0940-\u0916\u0941\u0936\u0940 &mdash; \u0914\u0930 \u092c\u0939\u0941\u0924 \u0936\u094b\u0930-\u0936\u0930\u093e\u092c\u0947 \u0938\u0947 &mdash; \u0930\u0939\u0947\u0964 &#127800;","bn":"\u0997\u09cb\u09b0\u0996\u09aa\u09c1\u09b0\u09c7\u09b0 \u098f\u0995\u099f\u09bf \u099b\u09c7\u09b2\u09c7 \u0986\u09b0 \u09ac\u09be\u0982\u09b2\u09be\u09b0 \u098f\u0995\u099f\u09bf \u09ae\u09c7\u09df\u09c7\u09b0 \u09ac\u09bf\u09df\u09c7 \u09b9\u099a\u09cd\u099b\u09c7&hellip;<br>\u0986\u09b0 \u09b8\u09ac\u09be\u0987 \u09b8\u09c1\u0996\u09c7 &mdash; \u098f\u09ac\u0982 \u09aa\u09cd\u09b0\u099a\u09a3\u09cd\u09a1 \u09b6\u09cb\u09b0\u0997\u09cb\u09b2\u09c7 &mdash; \u09ac\u09be\u0981\u099a\u09b2\u0964 &#127800;"},
+
+  "cd-label": {"en":"&#10022; The Big Day Is In &#10022;","hi":"&#10022; \u0936\u0941\u092d \u0926\u093f\u0928 \u0906\u0928\u0947 \u092e\u0947\u0902 \u092c\u091a\u0947 &#10022;","bn":"&#10022; \u09b6\u09c1\u09ad \u09a6\u09bf\u09a8\u099f\u09bf \u0986\u09b8\u099b\u09c7 &#10022;"},
+  "cd-days":  {"en":"Days",   "hi":"\u0926\u093f\u0928",   "bn":"\u09a6\u09bf\u09a8"},
+  "cd-hours": {"en":"Hours",  "hi":"\u0918\u0902\u091f\u0947",  "bn":"\u0998\u09a3\u09cd\u099f\u09be"},
+  "cd-mins":  {"en":"Minutes","hi":"\u092e\u093f\u0928\u091f",  "bn":"\u09ae\u09bf\u09a8\u09bf\u099f"},
+  "cd-secs":  {"en":"Seconds","hi":"\u0938\u0947\u0915\u0902\u0921", "bn":"\u09b8\u09c7\u0995\u09c7\u09a8\u09cd\u09a1"},
+
+  "events-label": {"en":"&#10022; The Celebrations &#10022;","hi":"&#10022; \u0909\u0924\u094d\u0938\u0935 &#10022;","bn":"&#10022; \u0989\u09ce\u09b8\u09ac &#10022;"},
+  "events-title": {"en":"Save the Dates","hi":"\u0924\u093e\u0930\u0940\u0916\u0947\u0902 \u092f\u093e\u0926 \u0930\u0916\u0947\u0902","bn":"\u09a4\u09be\u09b0\u09bf\u0996\u0997\u09c1\u09b2\u09cb \u09ae\u09a8\u09c7 \u09b0\u09be\u0996\u09c1\u09a8"},
+
+  "ev1-name": {"en":"Haldi &amp; Fun Activities","hi":"\u0939\u0932\u094d\u0926\u0940 \u0935 \u092e\u094c\u091c-\u092e\u0938\u094d\u0924\u0940","bn":"\u09b9\u09b2\u09c1\u09a6 \u0993 \u0986\u09a8\u09a8\u09cd\u09a6 \u0985\u09a8\u09c1\u09b7\u09cd\u09a0\u09be\u09a8"},
+  "ev1-date": {"en":"28 January &bull; 12:00 PM","hi":"\u0968\u096e \u091c\u0928\u0935\u0930\u0940 &bull; \u0926\u094b\u092a\u0939\u0930 \u0967\u0968 \u092c\u091c\u0947","bn":"\u09e8\u09ee \u099c\u09be\u09a8\u09c1\u09af\u09bc\u09be\u09b0\u09bf &bull; \u09a6\u09c1\u09aa\u09c1\u09b0 \u09e7\u09e8\u099f\u09be"},
+  "ev1-l1":{"en":"Haldi on faces (and clothes, and walls)","hi":"\u0939\u0932\u094d\u0926\u0940 \u091a\u0947\u0939\u0930\u0947 \u092a\u0930 (\u0914\u0930 \u0915\u092a\u095c\u094b\u0902 \u0935 \u0926\u0940\u0935\u093e\u0930\u094b\u0902 \u092a\u0930 \u092d\u0940)","bn":"\u09ae\u09c1\u0996\u09c7 \u09b9\u09b2\u09c1\u09a6 (\u099c\u09be\u09ae\u09be\u09df, \u09a6\u09c7\u09df\u09be\u09b2\u09c7\u0993)"},
+  "ev1-l2":{"en":"Random dancing &mdash; choreography very optional","hi":"\u092c\u0947\u0924\u0930\u0924\u0940\u092c \u0928\u0943\u0924\u094d\u092f &mdash; \u0915\u094b\u0930\u093f\u092f\u094b\u0917\u094d\u0930\u093e\u092b\u0940 \u091c\u093c\u0930\u0942\u0930\u0940 \u0928\u0939\u0940\u0902","bn":"\u09af\u0996\u09a8-\u09a4\u0996\u09a8 \u09a8\u09be\u099a &mdash; \u0995\u09cb\u09b0\u09bf\u0993\u0997\u09cd\u09b0\u09be\u09ab\u09bf \u098f\u0995\u09c7\u09ac\u09be\u09b0\u09c7 \u0990\u099a\u09cd\u099b\u09bf\u0995"},
+  "ev1-l3":{"en":"Questionable singing talent on full display","hi":"\u0938\u0902\u0926\u093f\u0917\u094d\u0927 \u0917\u093e\u092f\u0928 \u092a\u094d\u0930\u0924\u093f\u092d\u093e \u0915\u093e \u092a\u0942\u0930\u093e \u092a\u094d\u0930\u0926\u0930\u094d\u0936\u0928","bn":"\u09b8\u09a8\u09cd\u09a6\u09c7\u09b9\u099c\u09a8\u0995 \u0997\u09be\u09df\u0995\u09bf \u09aa\u09cd\u09b0\u09a4\u09bf\u09ad\u09be\u09b0 \u09aa\u09c2\u09b0\u09cd\u09a3 \u09aa\u09cd\u09b0\u09a6\u09b0\u09cd\u09b6\u09a8"},
+  "ev1-l4":{"en":"Relatives you've never met calling you beta","hi":"\u0905\u0928\u091c\u093e\u0928\u0947 \u0930\u093f\u0936\u094d\u0924\u0947\u0926\u093e\u0930 \u0906\u092a\u0915\u094b \u092c\u0947\u091f\u093e \u0915\u0939\u0947\u0902\u0917\u0947","bn":"\u0985\u099a\u09c7\u09a8\u09be \u0986\u09a4\u09cd\u09ae\u09c0\u09df\u09b0\u09be \u0986\u09aa\u09a8\u09be\u0995\u09c7 \u09ac\u09c7\u099f\u09be \u09a1\u09be\u0995\u09ac\u09c7"},
+
+  "ev2-name": {"en":"Sangeet &amp; Engagement","hi":"\u0938\u0902\u0917\u0940\u0924 \u0935 \u0938\u0917\u093e\u0908","bn":"\u09b8\u0999\u09cd\u0997\u09c0\u09a4 \u0993 \u09ac\u09be\u0997\u09a6\u09be\u09a8"},
+  "ev2-date": {"en":"28 January &bull; 7:00 PM","hi":"\u0968\u096e \u091c\u0928\u0935\u0930\u0940 &bull; \u0936\u093e\u092e \u0967 \u092c\u091c\u0947","bn":"\u09e8\u09ee \u099c\u09be\u09a8\u09c1\u09af\u09bc\u09be\u09b0\u09bf &bull; \u09b8\u09a8\u09cd\u09a7\u09cd\u09af\u09be \u09ed\u099f\u09be"},
+  "ev2-l1":{"en":"Dance performances (rehearsed &amp; otherwise)","hi":"\u0928\u0943\u0924\u094d\u092f \u092a\u094d\u0930\u0938\u094d\u0924\u0941\u0924\u093f\u092f\u093e\u0901 (\u0930\u093f\u0939\u0930\u094d\u0938\u0932 \u0935\u093e\u0932\u0940 \u0914\u0930 \u092c\u093f\u0928\u093e)","bn":"\u09a8\u09c3\u09a4\u09cd\u09af \u09aa\u09b0\u09bf\u09ac\u09c7\u09b6\u09a8\u09be (\u09ae\u09b9\u09dc\u09be \u09a6\u09c7\u09df\u09be \u0993 \u09a8\u09be-\u09a6\u09c7\u09df\u09be)"},
+  "ev2-l2":{"en":"Bollywood bops, wall to wall","hi":"\u092c\u0949\u0932\u0940\u0935\u0941\u0921 \u0915\u0947 \u0917\u093e\u0928\u0947, \u091a\u093e\u0930\u094b\u0902 \u0924\u0930\u092b","bn":"\u09ac\u09b2\u09bf\u0989\u09a1 \u0997\u09be\u09a8, \u09b8\u09b0\u09cd\u09ac\u09a4\u09cd\u09b0"},
+  "ev2-l3":{"en":"Emotional speeches and happy tears","hi":"\u092d\u093e\u0935\u0941\u0915 \u092d\u093e\u0937\u0923 \u0914\u0930 \u0916\u0941\u0936\u0940 \u0915\u0947 \u0906\u0901\u0938\u0942","bn":"\u0986\u09ac\u09c7\u0997\u09ae\u09af\u09bc \u09ac\u0995\u09cd\u09a4\u09c3\u09a4\u09be \u0993 \u0986\u09a8\u09a8\u09cd\u09a6\u09c7\u09b0 \u0985\u09b6\u09cd\u09b0\u09c1"},
+  "ev2-l4":{"en":"At least one uncle stealing the spotlight","hi":"\u0915\u092e \u0938\u0947 \u0915\u092e \u090f\u0915 \u091a\u093e\u091a\u093e\u091c\u0940 \u0932\u093e\u0907\u092e\u0932\u093e\u0907\u091f \u091a\u0941\u0930\u093e\u090f\u0902\u0917\u0947","bn":"\u0985\u09a8\u09cd\u09a4\u09a4 \u098f\u0995\u099c\u09a8 \u0995\u09be\u0995\u09be \u09b8\u09cd\u09aa\u099f\u09b2\u09be\u0987\u099f \u09a8\u09bf\u09df\u09c7 \u09af\u09be\u09ac\u09c7\u09a8"},
+
+  "ev3-name": {"en":"Barat","hi":"\u092c\u093e\u0930\u093e\u0924","bn":"\u09ac\u09b0\u09af\u09be\u09a4\u09cd\u09b0\u09be"},
+  "ev3-date": {"en":"29 January &bull; 6:00 PM","hi":"\u0968\u096f \u091c\u0928\u0935\u0930\u0940 &bull; \u0936\u093e\u092e \u0968 \u092c\u091c\u0947","bn":"\u09e8\u09ef \u099c\u09be\u09a8\u09c1\u09af\u09bc\u09be\u09b0\u09bf &bull; \u09b8\u09a8\u09cd\u09a7\u09cd\u09af\u09be \u09ec\u099f\u09be"},
+  "ev3-note": {"en":"Groom's side only &mdash; obviously &#128516;","hi":"\u0926\u0942\u0932\u094d\u0939\u0947 \u0935\u093e\u0932\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f \u0939\u0940 &mdash; \u091c\u093c\u093e\u0939\u093f\u0930 \u0939\u0948 &#128516;","bn":"\u09b6\u09c1\u09a7\u09c1 \u09ac\u09b0\u09aa\u0995\u09cd\u09b7\u09c7\u09b0 \u099c\u09a8\u09cd\u09af &mdash; \u09b8\u09cd\u09ac\u09be\u09ad\u09be\u09ac\u09bf\u0995\u09ad\u09be\u09ac\u09c7\u0987 &#128516;"},
+  "ev3-l1":{"en":"Dancing in the middle of the road","hi":"\u0938\u095c\u0915 \u0915\u0947 \u092c\u0940\u091a\u094b\u0902-\u092c\u0940\u091a \u0928\u0943\u0924\u094d\u092f","bn":"\u09b0\u09be\u09b8\u09cd\u09a4\u09be\u09b0 \u09ae\u09be\u099d\u0996\u09be\u09a8\u09c7 \u09a8\u09be\u099a"},
+  "ev3-l2":{"en":"Mild traffic confusion for everyone nearby","hi":"\u0906\u0938\u092a\u093e\u0938 \u0915\u0947 \u0932\u094b\u0917\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f \u091f\u094d\u0930\u0948\u092b\u093c\u093f\u0915 \u0915\u0940 \u0909\u0932\u091d\u0928","bn":"\u0986\u09b6\u09c7\u09aa\u09be\u09b6\u09c7\u09b0 \u09b8\u09ac\u09be\u09b0 \u099c\u09a8\u09cd\u09af \u09b9\u09be\u09b2\u0995\u09be \u099f\u09cd\u09b0\u09cd\u09af\u09be\u09ab\u09bf\u0995 \u09ac\u09bf\u09ad\u09cd\u09b0\u09be\u09a8\u09cd\u09a4\u09bf"},
+  "ev3-l3":{"en":"The groom pretending to be perfectly calm","hi":"\u0926\u0942\u0932\u094d\u0939\u093e \u092a\u0942\u0930\u0940 \u0924\u0930\u0939 \u0936\u093e\u0902\u0924 \u0926\u093f\u0916\u0928\u0947 \u0915\u093e \u0928\u093e\u091f\u0915 \u0915\u0930\u0924\u0947 \u0939\u0941\u090f","bn":"\u09ac\u09b0 \u09b8\u09ae\u09cd\u09aa\u09c2\u09b0\u09cd\u09a3 \u09b6\u09be\u09a8\u09cd\u09a4 \u09ad\u09be\u09a8 \u0995\u09b0\u09a4\u09c7 \u099a\u09c7\u09b7\u09cd\u099f\u09be \u0995\u09b0\u099b\u09c7\u09a8"},
+
+  "ev4-name": {"en":"Wedding Ceremony","hi":"\u0935\u093f\u0935\u093e\u0939 \u0938\u092e\u093e\u0930\u094b\u0939","bn":"\u09ac\u09bf\u09ac\u09be\u09b9 \u0985\u09a8\u09c1\u09b7\u09cd\u09a0\u09be\u09a8"},
+  "ev4-date": {"en":"29 January &bull; 8:00 PM","hi":"\u0968\u096f \u091c\u0928\u0935\u0930\u0940 &bull; \u0930\u093e\u0924 \u0968 \u092c\u091c\u0947","bn":"\u09e8\u09ef \u099c\u09be\u09a8\u09c1\u09af\u09bc\u09be\u09b0\u09bf &bull; \u09b0\u09be\u09a4 \u09ee\u099f\u09be"},
+  "ev4-desc": {"en":"The moment everyone &mdash; including pandit ji &mdash; has been patiently waiting for. Tissues recommended. Cameras mandatory.","hi":"\u0935\u0939 \u092a\u0932 \u091c\u093f\u0938\u0915\u093e \u0938\u092d\u0940 &mdash; \u092a\u0902\u0921\u093f\u0924 \u091c\u0940 \u0938\u092e\u0947\u0924 &mdash; \u092c\u0947\u0938\u092c\u094d\u0930\u0940 \u0938\u0947 \u0907\u0902\u0924\u091c\u093c\u093e\u0930 \u0915\u0930 \u0930\u0939\u0947 \u0939\u0948\u0902\u0964 \u0930\u0942\u092e\u093e\u0932 \u091c\u093c\u0930\u0942\u0930 \u0932\u093e\u090f\u0902\u0964 \u0915\u0948\u092e\u0930\u093e \u0905\u0928\u093f\u0935\u093e\u0930\u094d\u092f \u0939\u0948\u0964","bn":"\u09b8\u09c7\u0987 \u09ae\u09c1\u09b9\u09c2\u09b0\u09cd\u09a4 \u09af\u09be\u09b0 \u099c\u09a8\u09cd\u09af \u09b8\u09ac\u09be\u0987 &mdash; \u098f\u09ae\u09a8\u0995\u09bf \u09aa\u09c1\u09b0\u09cb\u09b9\u09bf\u09a4 \u09ae\u09b6\u09be\u0987\u0993 &mdash; \u09a7\u09c8\u09b0\u09cd\u09af \u09a7\u09b0\u09c7 \u0985\u09aa\u09c7\u0995\u09cd\u09b7\u09be \u0995\u09b0\u099b\u09c7\u09a8\u0964 \u099f\u09bf\u09b8\u09cd\u09af\u09c1 \u0986\u09a8\u09a4\u09c7 \u09ad\u09c1\u09b2\u09ac\u09c7\u09a8 \u09a8\u09be\u0964 \u0995\u09cd\u09af\u09be\u09ae\u09c7\u09b0\u09be \u09ac\u09be\u09a7\u09cd\u09af\u09a4\u09be\u09ae\u09c2\u09b2\u0995\u0964"},
+
+  "ls-label": {"en":"&#10022; \u09aa\u09b6\u09cd\u099a\u09bf\u09ae\u09ac\u0999\u09cd\u0997 \u09ae\u09bf\u09b2\u09bf\u09a4 \u09b9\u09df \u0989\u09a4\u09cd\u09a4\u09b0\u09aa\u09cd\u09b0\u09a6\u09c7\u09b6\u09c7\u09b0 \u09b8\u09be\u09a5\u09c7 &#10022;","hi":"&#10022; \u092c\u0902\u0917\u093e\u0932 \u092e\u093f\u0932\u093e \u0909\u0924\u094d\u0924\u0930\u092a\u094d\u0930\u0926\u0947\u0936 \u0938\u0947 &#10022;","bn":"&#10022; \u09aa\u09b6\u09cd\u099a\u09bf\u09ae\u09ac\u0999\u09cd\u0997 \u09ae\u09bf\u09b2\u09bf\u09a4 \u09b9\u09df \u0989\u09a4\u09cd\u09a4\u09b0\u09aa\u09cd\u09b0\u09a6\u09c7\u09b6\u09c7\u09b0 \u09b8\u09be\u09a5\u09c7 &#10022;"},
+  "ls-title": {"en":"When Bengal Met Uttar Pradesh","hi":"\u091c\u092c \u092c\u0902\u0917\u093e\u0932 \u092e\u093f\u0932\u093e \u0909\u0924\u094d\u0924\u0930 \u092a\u094d\u0930\u0926\u0947\u0936 \u0938\u0947","bn":"\u09af\u0996\u09a8 \u09ac\u09be\u0982\u09b2\u09be \u09ae\u09bf\u09b2\u09b2 \u0989\u09a4\u09cd\u09a4\u09b0 \u09aa\u09cd\u09b0\u09a6\u09c7\u09b6\u09c7\u09b0 \u09b8\u09be\u09a5\u09c7"},
+  "ls-sub":   {"en":"A cross-cultural love story, told honestly &mdash; with affection, amusement, and mild culinary disagreements.","hi":"\u090f\u0915 \u0905\u0902\u0924\u0930-\u0938\u093e\u0902\u0938\u094d\u0915\u0943\u0924\u093f\u0915 \u092a\u094d\u0930\u0947\u092e \u0915\u0939\u093e\u0928\u0940 &mdash; \u092a\u094d\u092f\u093e\u0930, \u0939\u0901\u0938\u0940 \u0914\u0930 \u0916\u093e\u0928\u0947 \u0915\u094b \u0932\u0947\u0915\u0930 \u0939\u0932\u094d\u0915\u0940-\u092b\u0941\u0932\u094d\u0915\u0940 \u0928\u094b\u0915\u091d\u094b\u0902\u0915 \u0915\u0947 \u0938\u093e\u0925\u0964","bn":"\u098f\u0995\u099f\u09bf \u0986\u09a8\u09cd\u09a4\u0983\u09b8\u09be\u0982\u09b8\u09cd\u0995\u09c3\u09a4\u09bf\u0995 \u09aa\u09cd\u09b0\u09c7\u09ae\u09c7\u09b0 \u0997\u09b2\u09cd\u09aa &mdash; \u09ad\u09be\u09b2\u09cb\u09ac\u09be\u09b8\u09be, \u09b9\u09be\u09b8\u09bf \u0986\u09b0 \u09b0\u09be\u09a8\u09cd\u09a8\u09be \u09a8\u09bf\u09df\u09c7 \u09b9\u09be\u09b2\u0995\u09be \u09ae\u09a4\u09ad\u09c7\u09a6 \u09b8\u09b9\u09c7\u0964"},
+
+  "bride-title": {"en":"The Bengali Bride &#127DF0;","hi":"\u092c\u0902\u0917\u093e\u0932\u0940 \u0926\u0941\u0932\u094d\u0939\u0928 &#127DF0;","bn":"\u09ac\u09be\u0982\u09b2\u09be\u09b0 \u0995\u09a8\u09c7 &#127DF0;"},
+  "bride-sub":   {"en":"Rupanjana brings to the table:","hi":"\u0930\u0941\u092a\u093e\u0902\u091c\u0928\u093e \u0915\u0940 \u0916\u0942\u092c\u093f\u092f\u093e\u0901:","bn":"\u09b0\u09c1\u09aa\u09be\u099e\u09cd\u099c\u09a8\u09be \u09af\u09be \u09a8\u09bf\u09df\u09c7 \u0986\u09b8\u099b\u09c7\u09a8:"},
+  "bride-l1":{"en":"&#127DF0; A deeply spiritual relationship with Hilsa fish","hi":"&#127DF0; \u0907\u0932\u093f\u0936 \u092e\u091b\u0932\u0940 \u0938\u0947 \u0917\u0939\u0930\u093e \u0906\u0924\u094d\u092e\u093f\u0915 \u0930\u093f\u0936\u094d\u0924\u093e","bn":"&#127DF0; \u0987\u09b2\u09bf\u09b6 \u09ae\u09be\u099b\u09c7\u09b0 \u09b8\u0999\u09cd\u0997\u09c7 \u0997\u09ad\u09c0\u09b0 \u0986\u09a4\u09cd\u09ae\u09bf\u0995 \u09b8\u09ae\u09cd\u09aa\u09b0\u09cd\u0995"},
+  "bride-l2":{"en":"&#128218; Strong opinions on Rabindranath Tagore (always)","hi":"&#128218; \u0930\u092c\u0940\u0928\u094d\u0926\u094d\u0930\u0928\u093e\u0925 \u091f\u0948\u0917\u094b\u0930 \u092a\u0930 \u0939\u092e\u0947\u0936\u093e \u092a\u0915\u094d\u0915\u0947 \u0935\u093f\u091a\u093e\u0930","bn":"&#128218; \u09b0\u09ac\u09c0\u09a8\u09cd\u09a6\u09cd\u09b0\u09a8\u09be\u09a5 \u09a0\u09be\u0995\u09c1\u09b0 \u09a8\u09bf\u09df\u09c7 \u09b8\u09a6\u09be\u0987 \u09a6\u09c3\u09a2\u09bc \u09ae\u09a4\u09be\u09ae\u09a4"},
+  "bride-l3":{"en":"&#127917; The ability to make any emotion sound like poetry","hi":"&#127917; \u0939\u0930 \u092d\u093e\u0935\u0928\u093e \u0915\u094b \u0915\u0935\u093f\u0924\u093e \u092c\u0928\u093e \u0926\u0947\u0928\u0947 \u0915\u0940 \u0915\u0932\u093e","bn":"&#127917; \u09af\u09c7\u0995\u09cb\u09a8\u09cb \u0985\u09a8\u09c1\u09ad\u09c2\u09a4\u09bf\u0995\u09c7 \u0995\u09ac\u09bf\u09a4\u09be\u09df \u09b0\u09c2\u09aa \u09a6\u09c7\u0993\u09df\u09be\u09b0 \u0995\u09cd\u09b7\u09ae\u09a4\u09be"},
+  "bride-l4":{"en":"&#127783;&#65039; A love for rainy days, adda, and cha in clay cups","hi":"&#127783;&#65039; \u092c\u093e\u0930\u093f\u0936, \u0905\u0921\u094d\u0921\u093e \u0914\u0930 \u092e\u093f\u091f\u094d\u091f\u0940 \u0915\u0947 \u0915\u092a \u092e\u0947\u0902 \u091a\u093e\u092f \u0938\u0947 \u092a\u094d\u092f\u093e\u0930","bn":"&#127783;&#65039; \u09ac\u09c3\u09b7\u09cd\u099f\u09bf\u09b0 \u09a6\u09bf\u09a8, \u0986\u09dc\u09cd\u09a1\u09be \u0986\u09b0 \u09ae\u09be\u099f\u09bf\u09b0 \u0995\u09be\u09aa\u09c7 \u099a\u09be\u09df\u09c7\u09b0 \u09ad\u09be\u09b2\u09cb\u09ac\u09be\u09b8\u09be"},
+  "bride-l5":{"en":"&#128705; Mishti doi as a response to every crisis","hi":"&#128705; \u0939\u0930 \u0938\u0902\u0915\u091f \u0915\u093e \u091c\u0935\u093e\u092c \u0939\u0948 \u092e\u093f\u0937\u094d\u091f\u0940 \u0926\u094b\u0908","bn":"&#128705; \u09aa\u09cd\u09b0\u09a4\u09bf\u099f\u09bf \u09b8\u0982\u0995\u099f\u09c7\u09b0 \u0989\u09a4\u09cd\u09a4\u09b0 \u09b9\u09b2\u09cb \u09ae\u09bf\u09b7\u09cd\u099f\u09bf \u09a6\u0987"},
+  "bride-l6":{"en":"&#127912; Alpona designs that put everyone else's rangoli to shame","hi":"&#127912; \u0906\u0932\u092a\u0928\u093e \u0921\u093f\u091c\u093c\u093e\u0907\u0928 \u091c\u094b \u092c\u093e\u0915\u0940 \u0938\u092c\u0915\u0940 \u0930\u0902\u0917\u094b\u0932\u0940 \u0915\u094b \u092e\u093e\u0924 \u0926\u0947","bn":"&#127912; \u0986\u09b2\u09aa\u09a8\u09be \u09a1\u09bf\u099c\u09be\u0987\u09a8 \u09af\u09be \u09ac\u09be\u0995\u09bf \u09b8\u09ac\u09be\u09b0 \u09b0\u0999\u09cd\u0997\u09cb\u09b2\u09bf\u0995\u09c7 \u09b2\u099c\u09cd\u099c\u09be \u09a6\u09c7\u09df"},
+  "bride-l7":{"en":"&#127802; The mandatory red &amp; white (lal-paar) saree game &mdash; undefeated","hi":"&#127802; \u0932\u093e\u0932-\u092a\u093e\u0930 \u0938\u093e\u0921\u093c\u0940 \u0915\u093e \u0916\u0947\u0932 &mdash; \u0905\u092a\u0930\u093e\u091c\u093f\u0924","bn":"&#127802; \u09b2\u09be\u09b2-\u09aa\u09be\u09dc \u09b6\u09be\u09dc\u09bf\u09b0 \u0996\u09c7\u09b2\u09be &mdash; \u0985\u09aa\u09b0\u09be\u099c\u09bf\u09a4"},
+  "bride-joke":{"en":"&ldquo;Mohit didn&rsquo;t know what aamsotto was. Rupanjana is still recovering from this revelation.&rdquo;","hi":"&ldquo;\u092e\u094b\u0939\u093f\u0924 \u0915\u094b \u0906\u092e\u0938\u0924\u094d\u0924\u094b \u0915\u0947 \u092c\u093e\u0930\u0947 \u092a\u0924\u093e \u0928\u0939\u0940\u0902 \u0925\u093e\u0964 \u0930\u0941\u092a\u093e\u0902\u091c\u0928\u093e \u0905\u092d\u0940 \u092d\u0940 \u0907\u0938 \u0916\u0941\u0932\u093e\u0938\u0947 \u0938\u0947 \u0909\u092c\u0930 \u0930\u0939\u0940 \u0939\u0948\u0902\u0964&rdquo;","bn":"&ldquo;\u09ae\u09cb\u09b9\u09bf\u09a4 \u099c\u09be\u09a8\u09a4 \u09a8\u09be \u0986\u09ae\u09b8\u09a4\u09cd\u09a4\u09cd\u09ac \u0995\u09c0\u0964 \u09b0\u09c1\u09aa\u09be\u099e\u09cd\u099c\u09a8\u09be \u098f\u0996\u09a8\u0993 \u098f\u0987 \u0986\u09ac\u09bf\u09b7\u09cd\u0995\u09be\u09b0 \u09a5\u09c7\u0995\u09c7 \u09b8\u09be\u09ae\u09b2\u09c7 \u0989\u09a0\u099b\u09c7\u09a8\u0964&rdquo;"},
+
+  "groom-title": {"en":"The UP Groom &#127798;&#65039;","hi":"\u092f\u0942\u092a\u0940 \u0915\u093e \u0926\u0942\u0932\u094d\u0939\u093e &#127798;&#65039;","bn":"\u0987\u0989\u09aa\u09bf\u09b0 \u09ac\u09b0 &#127798;&#65039;"},
+  "groom-sub":   {"en":"Mohit brings to the table:","hi":"\u092e\u094b\u0939\u093f\u0924 \u0915\u0940 \u0916\u0942\u092c\u093f\u092f\u093e\u0901:","bn":"\u09ae\u09cb\u09b9\u09bf\u09a4 \u09af\u09be \u09a8\u09bf\u09df\u09c7 \u0986\u09b8\u099b\u09c7\u09a8:"},
+  "groom-l1":{"en":"&#127798;&#65039; A heat tolerance that should be scientifically studied","hi":"&#127798;&#65039; \u092e\u0938\u093e\u0932\u094b\u0902 \u0915\u0940 \u0938\u0939\u0928\u0936\u0915\u094d\u0924\u093f \u091c\u094b \u0935\u093f\u091c\u094d\u091e\u093e\u0928 \u0915\u0947 \u0905\u0927\u094d\u092f\u092f\u0928 \u0915\u0940 \u0935\u093f\u0937\u092f \u0939\u094b","bn":"&#127798;&#65039; \u099d\u09be\u09b2\u09c7\u09b0 \u09b8\u09b9\u09a8\u09b6\u0995\u09cd\u09a4\u09bf \u09af\u09be \u09ac\u09c8\u099c\u09cd\u099e\u09be\u09a8\u09bf\u0995 \u0997\u09ac\u09c7\u09b7\u09a3\u09be\u09b0 \u09af\u09cb\u0997\u09cd\u09af"},
+  "groom-l2":{"en":"&#127925; Knowledge of every Bhojpuri song ever recorded","hi":"&#127925; \u0905\u092c \u0924\u0915 \u0915\u0947 \u0939\u0930 \u092d\u094b\u091c\u092a\u0941\u0930\u0940 \u0917\u093e\u0928\u0947 \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940","bn":"&#127925; \u098f\u0996\u09a8 \u09aa\u09b0\u09cd\u09af\u09a8\u09cd\u09a4 \u09b0\u09c7\u0995\u09b0\u09cd\u09a1 \u09b9\u0993\u09df\u09be \u09aa\u09cd\u09b0\u09a4\u09bf\u099f\u09bf \u09ad\u09cb\u099c\u09aa\u09c1\u09b0\u09bf \u0997\u09be\u09a8\u09c7\u09b0 \u099c\u09cd\u099e\u09be\u09a8"},
+  "groom-l3":{"en":"&#127842; Considers chaat a complete and balanced meal","hi":"&#127842; \u091a\u093e\u091f \u0915\u094b \u092a\u0942\u0930\u094d\u0923 \u0914\u0930 \u0938\u0902\u0924\u0941\u0932\u093f\u0924 \u092d\u094b\u091c\u0928 \u092e\u093e\u0928\u0924\u0947 \u0939\u0948\u0902","bn":"&#127842; \u099a\u09be\u099f\u0995\u09c7 \u09b8\u09ae\u09cd\u09aa\u09c2\u09b0\u09cd\u09a3 \u0993 \u09b8\u09c1\u09b7\u09ae \u0996\u09be\u09ac\u09be\u09b0 \u09ae\u09a8\u09c7 \u0995\u09b0\u09c7\u09a8"},
+  "groom-l4":{"en":"&#128666; Can navigate any UP road like it's a video game","hi":"&#128666; \u092f\u0942\u092a\u0940 \u0915\u0940 \u0915\u093f\u0938\u0940 \u092d\u0940 \u0938\u095c\u0915 \u0915\u094b \u0935\u0940\u0921\u093f\u092f\u094b \u0917\u0947\u092e \u0915\u0940 \u0924\u0930\u0939 \u0928\u0947\u0935\u093f\u0917\u0947\u091f \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902","bn":"&#128666; \u09af\u09c7\u0995\u09cb\u09a8\u09cb \u0987\u0989\u09aa\u09bf \u09b0\u09be\u09b8\u09cd\u09a4\u09be\u09df \u09ad\u09bf\u09a1\u09bf\u0993 \u0997\u09c7\u09ae\u09c7\u09b0 \u09ae\u09a4\u09cb \u099a\u09b2\u09a4\u09c7 \u09aa\u09be\u09b0\u09c7\u09a8"},
+  "groom-l5":{"en":"&#127905; Festivity levels that start at 10 and go higher","hi":"&#127905; \u0909\u0924\u094d\u0938\u093e\u0939 \u0915\u093e \u0938\u094d\u0924\u0930 \u091c\u094b 10 \u0938\u0947 \u0936\u0941\u0930\u0942 \u0939\u094b\u0924\u093e \u0939\u0948 \u0914\u0930 \u092c\u0922\u093c\u0924\u093e \u091c\u093e\u0924\u093e \u0939\u0948","bn":"&#127905; \u0989\u09ce\u09b8\u09ac\u09c7\u09b0 \u09ae\u09be\u09a4\u09cd\u09b0\u09be \u09af\u09be \u09e7\u09e6 \u09a5\u09c7\u0995\u09c7 \u09b6\u09c1\u09b0\u09c1 \u09b9\u09df\u09c7 \u0986\u09b0\u0993 \u09ac\u09be\u09dc\u09c7"},
+  "groom-l6":{"en":"&#129309; A family large enough to populate a small city","hi":"&#129309; \u090f\u0915 \u092a\u0930\u093f\u0935\u093e\u0930 \u091c\u094b \u090f\u0915 \u091b\u094b\u091f\u0947 \u0936\u0939\u0930 \u0915\u094b \u0906\u092c\u093e\u0926 \u0915\u0930 \u0926\u0947","bn":"&#129309; \u098f\u09ae\u09a8 \u09aa\u09b0\u09bf\u09ac\u09be\u09b0 \u09af\u09be \u098f\u0995\u099f\u09bf \u099b\u09cb\u099f \u09b6\u09b9\u09b0 \u09aa\u09c2\u09b0\u09cd\u09a3 \u0995\u09b0\u09c7 \u09a6\u09bf\u09a4\u09c7 \u09aa\u09be\u09b0\u09c7"},
+  "groom-l7":{"en":"&#127806; Unshakeable belief that UP ka khana is the best in India","hi":"&#127806; \u0905\u091f\u0932 \u0935\u093f\u0936\u094d\u0935\u093e\u0938 \u0915\u093f \u092f\u0942\u092a\u0940 \u0915\u093e \u0916\u093e\u0928\u093e \u092d\u093e\u0930\u0924 \u092e\u0947\u0902 \u0938\u0930\u094d\u0935\u0936\u094d\u0930\u0947\u0937\u094d\u0920 \u0939\u0948","bn":"&#127806; \u0985\u099f\u09b2 \u09ac\u09bf\u09b6\u09cd\u09ac\u09be\u09b8 \u09af\u09c7 \u0987\u0989\u09aa\u09bf\u09b0 \u0996\u09be\u09ac\u09be\u09b0 \u09ad\u09be\u09b0\u09a4\u09c7 \u09b8\u09c7\u09b0\u09be"},
+  "groom-joke":{"en":"&ldquo;Rupanjana once said chhole bhature is too spicy. Mohit is still processing this diplomatically.&rdquo;","hi":"&ldquo;\u0930\u0941\u092a\u093e\u0902\u091c\u0928\u093e \u0928\u0947 \u090f\u0915 \u092c\u093e\u0930 \u0915\u0939\u093e \u0925\u093e \u0915\u093f \u091b\u094b\u0932\u0947 \u092d\u091f\u0942\u0930\u0947 \u092c\u0939\u0941\u0924 \u092e\u0938\u093e\u0932\u0947\u0926\u093e\u0930 \u0939\u0948\u0902\u0964 \u092e\u094b\u0939\u093f\u0924 \u0905\u092d\u0940 \u0924\u0915 \u0907\u0938\u0947 \u0915\u0942\u091f\u0928\u0940\u0924\u093f\u0915 \u0924\u0930\u0940\u0915\u0947 \u0938\u0947 \u0939\u091c\u092e \u0915\u0930\u0928\u0947 \u0915\u0940 \u0915\u094b\u0936\u093f\u0936 \u092e\u0947\u0902 \u0939\u0948\u0902\u0964&rdquo;","bn":"&ldquo;\u09b0\u09c1\u09aa\u09be\u099e\u09cd\u099c\u09a8\u09be \u098f\u0995\u09ac\u09be\u09b0 \u09ac\u09b2\u09c7\u099b\u09bf\u09b2 \u099b\u09cb\u09b2\u09c7 \u09ad\u09be\u099f\u09c1\u09b0\u09c7 \u09ac\u09c7\u09b6\u09bf \u099d\u09be\u09b2\u0964 \u09ae\u09cb\u09b9\u09bf\u09a4 \u098f\u0996\u09a8\u0993 \u098f\u099f\u09be \u0995\u09c2\u099f\u09a8\u09c0\u09a4\u09bf\u0995\u09ad\u09be\u09ac\u09c7 \u09b9\u099c\u09ae \u0995\u09b0\u09be\u09b0 \u099a\u09c7\u09b7\u09cd\u099f\u09be\u09df \u0986\u099b\u09c7\u09a8\u0964&rdquo;"},
+
+  "clash-title": {"en":"The Great Cultural Negotiations &#129309;","hi":"\u092e\u0939\u093e\u0928 \u0938\u093e\u0902\u0938\u094d\u0915\u0943\u0924\u093f\u0915 \u0938\u092e\u091d\u094c\u0924\u0947 &#129309;","bn":"\u09ae\u09b9\u09be\u09a8 \u09b8\u09be\u0982\u09b8\u09cd\u0995\u09c3\u09a4\u09bf\u0995 \u0986\u09b2\u09cb\u099a\u09a8\u09be &#129309;"},
+  "clash-rice-title":{"en":"On Rice","hi":"\u091a\u093e\u0935\u0932 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902","bn":"\u09ad\u09be\u09a4\u09c7\u09b0 \u09ac\u09cd\u09af\u09be\u09aa\u09be\u09b0\u09c7"},
+  "clash-rice-text":{"en":"&ldquo;Rupanjana: Rice is life. Mohit: Rice is a side dish. They compromised. Rice is life, and has a side dish.&rdquo;","hi":"&ldquo;\u0930\u0941\u092a\u093e\u0902\u091c\u0928\u093e: \u091a\u093e\u0935\u0932 \u0939\u0940 \u091c\u0940\u0935\u0928 \u0939\u0948\u0964 \u092e\u094b\u0939\u093f\u0924: \u091a\u093e\u0935\u0932 \u090f\u0915 \u0938\u093e\u0907\u0921 \u0921\u093f\u0936 \u0939\u0948\u0964 \u0938\u092e\u091d\u094c\u0924\u093e \u0939\u0941\u0906 &mdash; \u091a\u093e\u0935\u0932 \u091c\u0940\u0935\u0928 \u0939\u0948, \u0914\u0930 \u0938\u093e\u0925 \u092e\u0947\u0902 \u0938\u093e\u0907\u0921 \u0921\u093f\u0936 \u092d\u0940\u0964&rdquo;","bn":"&ldquo;\u09b0\u09c1\u09aa\u09be\u099e\u09cd\u099c\u09a8\u09be: \u09ad\u09be\u09a4\u0987 \u099c\u09c0\u09ac\u09a8\u0964 \u09ae\u09cb\u09b9\u09bf\u09a4: \u09ad\u09be\u09a4 \u09b9\u09b2\u09cb \u098f\u0995\u099f\u09be \u09aa\u09be\u09b0\u09cd\u09b6\u09cd\u09ac-\u09aa\u09a6\u0964 \u0986\u09aa\u09cb\u09b7 \u09b9\u09b2\u09cb &mdash; \u09ad\u09be\u09a4 \u099c\u09c0\u09ac\u09a8, \u098f\u09ac\u0982 \u09b8\u09be\u09a5\u09c7 \u098f\u0995\u099f\u09be \u09aa\u09be\u09b0\u09cd\u09b6\u09cd\u09ac-\u09aa\u09a6\u0993\u0964&rdquo;"},
+  "clash-spice-title":{"en":"On Spice","hi":"\u092e\u0938\u093e\u0932\u0947 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902","bn":"\u099d\u09be\u09b2\u09c7\u09b0 \u09ac\u09cd\u09af\u09be\u09aa\u09be\u09b0\u09c7"},
+  "clash-spice-text":{"en":"&ldquo;Mohit's mild is Rupanjana's emergency. Rupanjana's spicy is Mohit's starter. Their kitchen has two stoves now.&rdquo;","hi":"&ldquo;\u092e\u094b\u0939\u093f\u0924 \u0915\u093e \u2018\u0939\u0932\u094d\u0915\u093e\u2019 \u0930\u0941\u092a\u093e\u0902\u091c\u0928\u093e \u0915\u0947 \u0932\u093f\u090f \u0907\u092e\u0930\u091c\u0947\u0902\u0938\u0940 \u0939\u0948\u0964 \u0930\u0941\u092a\u093e\u0902\u091c\u0928\u093e \u0915\u093e \u2018\u0924\u0940\u0916\u093e\u2019 \u092e\u094b\u0939\u093f\u0924 \u0915\u0947 \u0932\u093f\u090f \u0938\u094d\u091f\u093e\u0930\u094d\u091f\u0930 \u0939\u0948\u0964 \u0909\u0928\u0915\u0947 \u0930\u0938\u094b\u0908 \u092e\u0947\u0902 \u0905\u092c \u0926\u094b \u091a\u0942\u0932\u094d\u0939\u0947 \u0939\u0948\u0902\u0964&rdquo;","bn":"&ldquo;\u09ae\u09cb\u09b9\u09bf\u09a4\u09c7\u09b0 \u2018\u09ae\u09be\u0987\u09b2\u09cd\u09a1\u2019 \u09b0\u09c1\u09aa\u09be\u099e\u09cd\u099c\u09a8\u09be\u09b0 \u0995\u09be\u099b\u09c7 \u099c\u09b0\u09c1\u09b0\u09bf \u0985\u09ac\u09b8\u09cd\u09a5\u09be\u0964 \u09b0\u09c1\u09aa\u09be\u099e\u09cd\u099c\u09a8\u09be\u09b0 \u2018\u099d\u09be\u09b2\u2019 \u09ae\u09cb\u09b9\u09bf\u09a4\u09c7\u09b0 \u0995\u09be\u099b\u09c7 \u09b8\u09cd\u099f\u09be\u09b0\u09cd\u099f\u09be\u09b0\u0964 \u09a4\u09be\u09a6\u09c7\u09b0 \u09b0\u09be\u09a8\u09cd\u09a8\u09be\u0998\u09b0\u09c7 \u098f\u0996\u09a8 \u09a6\u09c1\u099f\u09cb \u099a\u09c1\u09b2\u09be\u0964&rdquo;"},
+  "clash-music-title":{"en":"On Music","hi":"\u0938\u0902\u0917\u0940\u0924 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902","bn":"\u09b8\u0982\u0997\u09c0\u09a4\u09c7\u09b0 \u09ac\u09cd\u09af\u09be\u09aa\u09be\u09b0\u09c7"},
+  "clash-music-text":{"en":"&ldquo;Rabindra Sangeet vs Bhojpuri pop. The wedding playlist has both. Nobody is fully happy. Everybody is dancing.&rdquo;","hi":"&ldquo;\u0930\u092c\u0940\u0928\u094d\u0926\u094d\u0930 \u0938\u0902\u0917\u0940\u0924 \u092c\u0928\u093e\u092e \u092d\u094b\u091c\u092a\u0941\u0930\u0940 \u092a\u0949\u092a\u0964 \u0936\u093e\u0926\u0940 \u0915\u0940 \u092a\u094d\u0932\u0947\u0932\u093f\u0938\u094d\u091f \u092e\u0947\u0902 \u0926\u094b\u0928\u094b\u0902 \u0939\u0948\u0902\u0964 \u0915\u094b\u0908 \u092a\u0942\u0930\u0940 \u0924\u0930\u0939 \u0916\u0941\u0936 \u0928\u0939\u0940\u0902\u0964 \u0938\u092c \u0928\u093e\u091a \u0930\u0939\u0947 \u0939\u0948\u0902\u0964&rdquo;","bn":"&ldquo;\u09b0\u09ac\u09c0\u09a8\u09cd\u09a6\u09cd\u09b0\u09b8\u0999\u09cd\u0997\u09c0\u09a4 \u09ac\u09a8\u09be\u09ae \u09ad\u09cb\u099c\u09aa\u09c1\u09b0\u09bf \u09aa\u09aa\u0964 \u09ac\u09bf\u09df\u09c7\u09b0 \u09aa\u09cd\u09b2\u09c7\u09b2\u09bf\u09b8\u09cd\u099f\u09c7 \u09a6\u09c1\u099f\u09cb\u0987 \u0986\u099b\u09c7\u0964 \u0995\u09c7\u0989 \u09aa\u09c1\u09b0\u09cb\u09aa\u09c1\u09b0\u09bf \u0996\u09c1\u09b6\u09bf \u09a8\u09df\u0964 \u09b8\u09ac\u09be\u0987 \u09a8\u09be\u099a\u099b\u09c7\u0964&rdquo;"},
+  "clash-fish-title":{"en":"On Fish","hi":"\u092e\u091b\u0932\u0940 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902","bn":"\u09ae\u09be\u099b\u09c7\u09b0 \u09ac\u09cd\u09af\u09be\u09aa\u09be\u09b0\u09c7"},
+  "clash-fish-text":{"en":"&ldquo;Rupanjana: Ilish is sacred. Mohit: Is that the one with bones? This was a long conversation.&rdquo;","hi":"&ldquo;\u0930\u0941\u092a\u093e\u0902\u091c\u0928\u093e: \u0907\u0932\u093f\u0936 \u092a\u0935\u093f\u0924\u094d\u0930 \u0939\u0948\u0964 \u092e\u094b\u0939\u093f\u0924: \u0935\u094b \u0935\u093e\u0932\u0940 \u091c\u093f\u0938\u092e\u0947\u0902 \u0915\u093e\u0901\u091f\u0947 \u0939\u094b\u0924\u0947 \u0939\u0948\u0902? \u092f\u0939 \u092c\u093e\u0924\u091a\u0940\u0924 \u092c\u0939\u0941\u0924 \u0932\u0902\u092c\u0940 \u091a\u0932\u0940\u0964&rdquo;","bn":"&ldquo;\u09b0\u09c1\u09aa\u09be\u099e\u09cd\u099c\u09a8\u09be: \u0987\u09b2\u09bf\u09b6 \u09aa\u09ac\u09bf\u09a4\u09cd\u09b0\u0964 \u09ae\u09cb\u09b9\u09bf\u09a4: \u0993\u099f\u09be \u0995\u09bf \u09b8\u09c7\u0987 \u0995\u09be\u0981\u099f\u09be\u0993\u09af\u09bc\u09be\u09b2\u09be \u09ae\u09be\u099b? \u098f\u0987 \u0995\u09a5\u09cb\u09aa\u0995\u09a5\u09a8 \u0985\u09a8\u09c7\u0995\u0995\u09cd\u09b7\u09a3 \u099a\u09b2\u09c7\u099b\u09bf\u09b2\u0964&rdquo;"},
+  "clash-tea-title":{"en":"On Tea","hi":"\u091a\u093e\u092f \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902","bn":"\u099a\u09be\u09df\u09c7\u09b0 \u09ac\u09cd\u09af\u09be\u09aa\u09be\u09b0\u09c7"},
+  "clash-tea-text":{"en":"&ldquo;Bengali adda-cha (light, poetic). UP-style kadak chai (strong, honest). Both cups are always full. That's love.&rdquo;","hi":"&ldquo;\u092c\u0902\u0917\u093e\u0932\u0940 \u0905\u0921\u094d\u0921\u093e-\u091a\u093e (\u0939\u0932\u094d\u0915\u0940, \u0915\u093e\u0935\u094d\u092f\u093e\u0924\u094d\u092e\u0915)\u0964 \u092f\u0942\u092a\u0940 \u0915\u0940 \u0915\u095c\u0915 \u091a\u093e\u092f (\u0915\u095c\u0940, \u0908\u092e\u093e\u0928\u0926\u093e\u0930)\u0964 \u0926\u094b\u0928\u094b\u0902 \u0915\u092a \u0939\u092e\u0947\u0936\u093e \u092d\u0930\u0947 \u0930\u0939\u0924\u0947 \u0939\u0948\u0902\u0964 \u092f\u0939\u0940 \u092a\u094d\u092f\u093e\u0930 \u0939\u0948\u0964&rdquo;","bn":"&ldquo;\u09ac\u09be\u0999\u09be\u09b2\u09bf \u0986\u09dc\u09cd\u09a1\u09be-\u099a\u09be (\u09b9\u09be\u09b2\u0995\u09be, \u0995\u09be\u09ac\u09cd\u09af\u09bf\u0995)\u0964 \u0987\u0989\u09aa\u09bf-\u09b8\u09cd\u099f\u09be\u0987\u09b2 \u0995\u09dc\u09be \u099a\u09be (\u09b6\u0995\u09cd\u09a4, \u09b8\u09ce)\u0964 \u09a6\u09c1\u099f\u09cb \u0995\u09be\u09aa \u09b8\u09ac\u09b8\u09ae\u09df \u09ad\u09b0\u09be\u0964 \u098f\u099f\u09be\u0987 \u09ad\u09be\u09b2\u09cb\u09ac\u09be\u09b8\u09be\u0964&rdquo;"},
+  "clash-wed-title":{"en":"On Weddings","hi":"\u0936\u093e\u0926\u0940 \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902","bn":"\u09ac\u09bf\u09df\u09c7\u09b0 \u09ac\u09cd\u09af\u09be\u09aa\u09be\u09b0\u09c7"},
+  "clash-wed-text":{"en":"&ldquo;Bengali: Sindoor, shankha, ululation. UP: Barat, shehnai, 3-day tamasha. Combined: A 47,000-decibel masterpiece.&rdquo;","hi":"&ldquo;\u092c\u0902\u0917\u093e\u0932\u0940: \u0938\u093f\u0902\u0926\u0942\u0930, \u0936\u0902\u0916\u093e, \u0909\u0932\u0941\u0927\u094d\u0935\u0928\u093f\u0964 \u092f\u0942\u092a\u0940: \u092c\u093e\u0930\u093e\u0924, \u0936\u0939\u0928\u093e\u0908, 3 \u0926\u093f\u0928 \u0915\u093e \u0924\u092e\u093e\u0936\u093e\u0964 \u092e\u093f\u0932\u093e\u0915\u0930: 47,000 \u0921\u0947\u0938\u093f\u092c\u0932 \u0915\u0940 \u090f\u0915 \u092e\u093e\u0938\u094d\u091f\u0930\u092a\u0940\u0938\u0964&rdquo;","bn":"&ldquo;\u09ac\u09be\u0999\u09be\u09b2\u09bf: \u09b8\u09bf\u0981\u09a6\u09c1\u09b0, \u09b6\u09be\u0981\u0996\u09be, \u0989\u09b2\u09c1\u09a7\u09cd\u09ac\u09a8\u09bf\u0964 \u0987\u0989\u09aa\u09bf: \u09ac\u09b0\u09af\u09be\u09a4\u09cd\u09b0\u09be, \u09b6\u09c7\u09b9\u09a8\u09be\u0987, \u09e9 \u09a6\u09bf\u09a8\u09c7\u09b0 \u09a4\u09be\u09ae\u09be\u09b6\u09be\u0964 \u09ae\u09bf\u09b2\u09bf\u09df\u09c7: \u09ea\u09ed,\u09e6\u09e6\u09e6 \u09a1\u09c7\u09b8\u09bf\u09ac\u09c7\u09b2\u09c7\u09b0 \u098f\u0995\u099f\u09bf \u09ae\u09be\u09b8\u09cd\u099f\u09be\u09b0\u09aa\u09bf\u09b8\u0964&rdquo;"},
+
+  "ls-conclusion":{"en":"&ldquo;At the end of the day, she says Amar sonar bangla and he says Jai UP &mdash; and somehow, together, they say home.&rdquo;","hi":"&ldquo;\u0926\u093f\u0928 \u0915\u0947 \u0905\u0902\u0924 \u092e\u0947\u0902 \u0935\u094b \u0915\u0939\u0924\u0940 \u0939\u0948 \u0906\u092e\u093e\u0930 \u0938\u094b\u0928\u093e\u0930 \u092c\u093e\u0902\u0917\u094d\u0932\u093e \u0914\u0930 \u0935\u094b \u0915\u0939\u0924\u0947 \u0939\u0948\u0902 \u091c\u092f \u092f\u0942\u092a\u0940 &mdash; \u0914\u0930 \u0926\u094b\u0928\u094b\u0902 \u092e\u093f\u0932\u0915\u0930 \u0915\u0939\u0924\u0947 \u0939\u0948\u0902 \u2018\u0918\u0930\u2019\u0964&rdquo;","bn":"&ldquo;\u09a6\u09bf\u09a8\u09c7\u09b0 \u09b6\u09c7\u09b7\u09c7 \u09b8\u09c7 \u09ac\u09b2\u09c7 \u0986\u09ae\u09be\u09b0 \u09b8\u09cb\u09a8\u09be\u09b0 \u09ac\u09be\u0982\u09b2\u09be, \u09b8\u09c7 \u09ac\u09b2\u09c7 \u099c\u09df \u0987\u0989\u09aa\u09bf &mdash; \u0986\u09b0 \u09a6\u09c1\u099c\u09a8\u09c7 \u09ae\u09bf\u09b2\u09c7 \u09ac\u09b2\u09c7 \u09b8\u09cd\u09ac\u0997\u09c3\u09b9\u0964&rdquo;"},
+  "ls-footer-note":{"en":"The fish curry and the aloo puri sit peacefully on the same wedding menu. Progress. &#127DF0;&#127842;","hi":"\u092e\u091b\u0932\u0940 \u0915\u0930\u0940 \u0914\u0930 \u0906\u0932\u0942 \u092a\u0942\u0930\u0940 \u090f\u0915 \u0939\u0940 \u0936\u093e\u0926\u0940 \u0915\u0947 \u092e\u0947\u0928\u094d\u092f\u0942 \u092e\u0947\u0902 \u0936\u093e\u0902\u0924\u093f\u092a\u0942\u0930\u094d\u0923 \u0938\u0939\u0905\u0938\u094d\u0924\u093f\u0924\u094d\u0935 \u092e\u0947\u0902 \u0939\u0948\u0902\u0964 \u092f\u0939\u0940 \u0924\u0930\u0915\u094d\u0915\u0940 \u0939\u0948\u0964 &#127DF0;&#127842;","bn":"\u09ae\u09be\u099b\u09c7\u09b0 \u099d\u09cb\u09b2 \u0986\u09b0 \u0986\u09b2\u09c1\u09b0 \u09aa\u09c1\u09b0\u09bf \u098f\u0995\u0987 \u09ac\u09bf\u09df\u09c7\u09b0 \u09ae\u09c7\u09a8\u09c1\u09a4\u09c7 \u09b6\u09be\u09a8\u09cd\u09a4\u09bf\u09aa\u09c2\u09b0\u09cd\u09a3\u09ad\u09be\u09ac\u09c7 \u0986\u099b\u09c7\u0964 \u0985\u0997\u09cd\u09b0\u0997\u09a4\u09bf\u0964 &#127DF0;&#127842;"},
+
+  "venue-label":{"en":"&#10022; Where The Magic Happens &#10022;","hi":"&#10022; \u091c\u0939\u093e\u0901 \u091c\u093e\u0926\u0942 \u0939\u094b\u0917\u093e &#10022;","bn":"&#10022; \u09af\u09c7\u0996\u09be\u09a8\u09c7 \u099c\u09be\u09a6\u09c1 \u0998\u099f\u09ac\u09c7 &#10022;"},
+  "venue-title":{"en":"Join Us In","hi":"\u0939\u092e\u0938\u0947 \u092e\u093f\u0932\u093f\u090f","bn":"\u0986\u09ae\u09be\u09a6\u09c7\u09b0 \u09b8\u09be\u09a5\u09c7 \u09af\u09cb\u0997 \u09a6\u09bf\u09a8"},
+  "venue-city": {"en":"Indore, India &#127470;&#127475;","hi":"\u0907\u0902\u0926\u094c\u0930, \u092d\u093e\u0930\u0924 &#127470;&#127475;","bn":"\u0987\u09a8\u09cd\u09a6\u09cb\u09b0, \u09ad\u09be\u09b0\u09a4 &#127470;&#127475;"},
+  "venue-desc": {"en":"The city of poha and jalebi; now also the meeting ground of Bengal and Uttar Pradesh. Think of it as neutral territory where both families can argue about food equally. Venue is <a href=\"https://share.google/lqwjLYxANUpIgQKzt\" target=\"_blank\" style=\"color:#D4A843;text-decoration:underline\">HR Resort And Hotel</a>. \ud83d\uddfa\ufe0f","hi":"\u092a\u094b\u0939\u093e \u0914\u0930 \u091c\u0932\u0947\u092c\u0940 \u0915\u093e \u0936\u0939\u0930 &mdash; \u0905\u092c \u092c\u0902\u0917\u093e\u0932 \u0914\u0930 \u0909\u0924\u094d\u0924\u0930 \u092a\u094d\u0930\u0926\u0947\u0936 \u0915\u093e \u092e\u093f\u0932\u0928 \u0938\u094d\u0925\u0932 \u092d\u0940\u0964 \u0907\u0938\u0947 \u0924\u091f\u0938\u094d\u0925 \u091c\u093c\u092e\u0940\u0928 \u0938\u092e\u091d\u093f\u090f \u091c\u0939\u093e\u0901 \u0926\u094b\u0928\u094b\u0902 \u092a\u0930\u093f\u0935\u093e\u0930 \u0916\u093e\u0928\u0947 \u092a\u0930 \u092c\u0939\u0938 \u0915\u0930 \u0938\u0915\u0924\u0947 \u0939\u0948\u0902\u0964 \u0935\u0947\u0928\u094d\u092f\u0942 \u0939\u0948 <a href=\"https://share.google/lqwjLYxANUpIgQKzt\" target=\"_blank\" style=\"color:#D4A843;text-decoration:underline\">HR Resort And Hotel</a>\u0964 \ud83d\uddfa\ufe0f","bn":"\u09aa\u09cb\u09b9\u09be \u0986\u09b0 \u099c\u09be\u09b2\u09c7\u09ac\u09bf\u09b0 \u09b6\u09b9\u09b0 &mdash; \u098f\u0996\u09a8 \u09ac\u09be\u0982\u09b2\u09be \u0993 \u0989\u09a4\u09cd\u09a4\u09b0 \u09aa\u09cd\u09b0\u09a6\u09c7\u09b6\u09c7\u09b0 \u09ae\u09bf\u09b2\u09a8\u0995\u09cd\u09b7\u09c7\u09a4\u09cd\u09b0\u0964 \u098f\u099f\u09be\u0995\u09c7 \u09a8\u09bf\u09b0\u09aa\u09c7\u0995\u09cd\u09b7 \u09ad\u09c2\u09ae\u09bf \u09ad\u09be\u09ac\u09c1\u09a8 \u09af\u09c7\u0996\u09be\u09a8\u09c7 \u09a6\u09c1\u0987 \u09aa\u09b0\u09bf\u09ac\u09be\u09b0 \u09b8\u09ae\u09be\u09a8\u09ad\u09be\u09ac\u09c7 \u0996\u09be\u09ac\u09be\u09b0 \u09a8\u09bf\u09af\u09bc\u09c7 \u09a4\u09b0\u09cd\u0995 \u0995\u09b0\u09a4\u09c7 \u09aa\u09be\u09b0\u09ac\u09c7\u0964 \u09ad\u09c7\u09a8\u09cd\u09af\u09c1 \u09b9\u09b2\u09cb <a href=\"https://share.google/lqwjLYxANUpIgQKzt\" target=\"_blank\" style=\"color:#D4A843;text-decoration:underline\">HR Resort And Hotel</a>\u0964 \ud83d\uddfa\ufe0f"},
+
+  "expect-label":{"en":"&#10022; A Friendly Briefing &#10022;","hi":"&#10022; \u090f\u0915 \u0926\u094b\u0938\u094d\u0924\u093e\u0928\u093e \u091c\u093e\u0928\u0915\u093e\u0930\u0940 &#10022;","bn":"&#10022; \u098f\u0995\u099f\u09bf \u09ac\u09a8\u09cd\u09a7\u09c1\u09a4\u09cd\u09ac\u09aa\u09c2\u09b0\u09cd\u09a3 \u09ac\u09bf\u09ac\u09b0\u09a3 &#10022;"},
+  "expect-title":{"en":"What to Expect","hi":"\u0915\u094d\u092f\u093e \u0909\u092e\u094d\u092e\u0940\u0926 \u0930\u0916\u0947\u0902","bn":"\u0995\u09c0 \u0986\u09b6\u09be \u0995\u09b0\u09ac\u09c7\u09a8"},
+  "expect-yes-title":{"en":"&#9989; Things You'll Find","hi":"&#9989; \u091c\u094b \u092e\u093f\u0932\u0947\u0917\u093e","bn":"&#9989; \u09af\u09be \u09aa\u09be\u09ac\u09c7\u09a8"},
+  "ex-y1":{"en":"Fun guaranteed and a lot of traditions","hi":"\u092e\u091c\u093c\u093e \u0917\u093e\u0930\u0902\u091f\u0940 \u0914\u0930 \u0922\u0947\u0930 \u0938\u093e\u0930\u0940 \u092a\u0930\u0902\u092a\u0930\u093e\u090f\u0902","bn":"\u09ae\u099c\u09be \u09a8\u09bf\u09b6\u09cd\u099a\u09bf\u09a4 \u098f\u09ac\u0982 \u09aa\u09cd\u09b0\u099a\u09c1\u09b0 \u0990\u09a4\u09bf\u09b9\u09cd\u09af"},
+  "ex-y2":{"en":"UP-style shehnai AND Bengali ululation &mdash; simultaneously","hi":"\u092f\u0942\u092a\u0940 \u0915\u0940 \u0936\u0939\u0928\u093e\u0908 \u0914\u0930 \u092c\u0902\u0917\u093e\u0932\u0940 \u0909\u0932\u0941\u0927\u094d\u0935\u0928\u093f &mdash; \u090f\u0915 \u0938\u093e\u0925","bn":"\u0987\u0989\u09aa\u09bf-\u09b8\u09cd\u099f\u09be\u0987\u09b2 \u09b6\u09c7\u09b9\u09a8\u09be\u0987 \u0986\u09b0 \u09ac\u09be\u0999\u09be\u09b2\u09bf \u0989\u09b2\u09c1\u09a7\u09cd\u09ac\u09a8\u09bf &mdash; \u098f\u0995\u09b8\u09be\u09a5\u09c7"},
+  "ex-y3":{"en":"Mishti doi and gulab jamun on the same table (history)","hi":"\u090f\u0915 \u0939\u0940 \u091f\u0947\u092c\u0932 \u092a\u0930 \u092e\u093f\u0937\u094d\u091f\u0940 \u0926\u094b\u0908 \u0914\u0930 \u0917\u0941\u0932\u093e\u092c \u091c\u093e\u092e\u0941\u0928 (\u0910\u0924\u093f\u0939\u093e\u0938\u093f\u0915)","bn":"\u098f\u0995\u0987 \u099f\u09c7\u09ac\u09bf\u09b2\u09c7 \u09ae\u09bf\u09b7\u09cd\u099f\u09bf \u09a6\u0987 \u0993 \u0997\u09c1\u09b2\u09be\u09ac \u099c\u09be\u09ae\u09c1\u09a8 (\u0987\u09a4\u09bf\u09b9\u09be\u09b8)"},
+  "ex-y4":{"en":"Loud, glorious music (No English)","hi":"\u091c\u094b\u0930\u0926\u093e\u0930, \u0936\u093e\u0928\u0926\u093e\u0930 \u0938\u0902\u0917\u0940\u0924 (\u0915\u094b\u0908 \u0905\u0902\u0917\u094d\u0930\u0947\u091c\u093c\u0940 \u0928\u0939\u0940\u0902)","bn":"\u099c\u09cb\u09b0\u09be\u09b2\u09cb, \u0997\u09cc\u09b0\u09ac\u09ae\u09df \u09b8\u0982\u0997\u09c0\u09a4 (\u0995\u09cb\u09a8\u09cb \u0987\u0982\u09b0\u09c7\u099c\u09bf \u09a8\u09c7\u0987)"},
+  "ex-y5":{"en":"Dancing all night long, just kidding it's not allowed after 11pm","hi":"\u0930\u093e\u0924\u092d\u0930 \u0928\u093e\u091a, \u092e\u091c\u093c\u093e\u0915 \u0915\u0930 \u0930\u0939\u0947 \u0939\u0948\u0902 &mdash; 11 \u092c\u091c\u0947 \u0915\u0947 \u092c\u093e\u0926 \u092e\u0928\u093e \u0939\u0948","bn":"\u09b8\u09be\u09b0\u09be\u09b0\u09be\u09a4 \u09a8\u09be\u099a, \u09ae\u099c\u09be \u0995\u09b0\u099b\u09bf &mdash; \u09b0\u09be\u09a4 \u09e7\u09e7\u099f\u09be\u09b0 \u09aa\u09b0 \u0985\u09a8\u09c1\u09ae\u09a4\u09bf \u09a8\u09c7\u0987"},
+  "ex-y6":{"en":"Fish curry and aloo puri &mdash; peacefully coexisting","hi":"\u092e\u091b\u0932\u0940 \u0915\u0930\u0940 \u0914\u0930 \u0906\u0932\u0942 \u092a\u0942\u0930\u0940 &mdash; \u0936\u093e\u0902\u0924\u093f\u092a\u0942\u0930\u094d\u0923 \u0938\u0939\u0905\u0938\u094d\u0924\u093f\u0924\u094d\u0935","bn":"\u09ae\u09be\u099b\u09c7\u09b0 \u099d\u09cb\u09b2 \u0993 \u0986\u09b2\u09c1\u09b0 \u09aa\u09c1\u09b0\u09bf &mdash; \u09b6\u09be\u09a8\u09cd\u09a4\u09bf\u09aa\u09c2\u09b0\u09cd\u09a3\u09ad\u09be\u09ac\u09c7 \u098f\u0995\u09b8\u09be\u09a5\u09c7"},
+  "ex-y7":{"en":"Sindoor, shankha, pheras &mdash; the full beautiful package","hi":"\u0938\u093f\u0902\u0926\u0942\u0930, \u0936\u0902\u0916\u093e, \u092b\u0947\u0930\u0947 &mdash; \u092a\u0942\u0930\u093e \u0938\u0941\u0902\u0926\u0930 \u092a\u0948\u0915\u0947\u091c","bn":"\u09b8\u09bf\u0981\u09a6\u09c1\u09b0, \u09b6\u09be\u0981\u0996\u09be, \u09ab\u09c7\u09b0\u09be &mdash; \u09aa\u09c1\u09b0\u09cb \u09b8\u09c1\u09a8\u09cd\u09a6\u09b0 \u09aa\u09cd\u09af\u09be\u0995\u09c7\u099c"},
+  "ex-y8":{"en":"Endless photos of you looking great","hi":"\u0906\u092a\u0915\u0940 \u0936\u093e\u0928\u0926\u093e\u0930 \u0924\u0938\u094d\u0935\u0940\u0930\u0947\u0902 \u092c\u0947\u0936\u0941\u092e\u093e\u0930","bn":"\u0986\u09aa\u09a8\u09be\u09b0 \u09a6\u09be\u09b0\u09c1\u09a3 \u09a6\u09c7\u0996\u09a4\u09c7 \u099b\u09ac\u09bf\u09b0 \u09b6\u09c7\u09b7 \u09a8\u09c7\u0987"},
+  "expect-no-title":{"en":"&#10060; Things You Won't Find","hi":"&#10060; \u091c\u094b \u0928\u0939\u0940\u0902 \u092e\u093f\u0932\u0947\u0917\u093e","bn":"&#10060; \u09af\u09be \u09aa\u09be\u09ac\u09c7\u09a8 \u09a8\u09be"},
+  "ex-n1":{"en":"Peace and quiet (not even slightly)","hi":"\u0936\u093e\u0902\u0924\u093f \u0914\u0930 \u0938\u0941\u0915\u0942\u0928 (\u0925\u094b\u095c\u093e \u092d\u0940 \u0928\u0939\u0940\u0902)","bn":"\u09b6\u09be\u09a8\u09cd\u09a4\u09bf \u0993 \u09a8\u09c0\u09b0\u09ac\u09a4\u09be (\u098f\u0995\u099f\u09c1\u0993 \u09a8\u09be)"},
+  "ex-n2":{"en":"Alcohol &mdash; dry celebration, very wet with emotions","hi":"\u0936\u0930\u093e\u092c &mdash; \u0938\u0942\u0916\u093e \u091c\u0936\u094d\u0928, \u092d\u093e\u0935\u0928\u093e\u0913\u0902 \u0938\u0947 \u0932\u092c\u093e\u0932\u092c","bn":"\u09ae\u09a6 &mdash; \u09b6\u09c1\u0995\u09a8\u09cb \u0989\u09ce\u09b8\u09ac, \u0986\u09ac\u09c7\u0997\u09c7 \u098f\u0995\u09a6\u09ae \u09ad\u09c7\u099c\u09be"},
+  "ex-n3":{"en":"Non Veg food and Vegan food","hi":"\u0928\u0949\u0928 \u0935\u0947\u091c \u0916\u093e\u0928\u093e \u0914\u0930 \u0935\u0940\u0917\u0928 \u0916\u093e\u0928\u093e","bn":"\u09a8\u09a8-\u09ad\u09c7\u099c \u0996\u09be\u09ac\u09be\u09b0 \u098f\u09ac\u0982 \u09ad\u09c7\u0997\u09be\u09a8 \u0996\u09be\u09ac\u09be\u09b0"},
+  "ex-n4":{"en":"Agreement on whose state has better food (never)","hi":"\u0907\u0938 \u092c\u093e\u0924 \u092a\u0930 \u0938\u0939\u092e\u0924\u093f \u0915\u093f \u0915\u093f\u0938\u0915\u093e \u0916\u093e\u0928\u093e \u092c\u0947\u0939\u0924\u0930 \u0939\u0948 (\u0915\u092d\u0940 \u0928\u0939\u0940\u0902)","bn":"\u0995\u09cb\u09a8 \u09b0\u09be\u099c\u09cd\u09af\u09c7\u09b0 \u0996\u09be\u09ac\u09be\u09b0 \u09ad\u09be\u09b2\u09cb \u09a4\u09be \u09a8\u09bf\u09df\u09c7 \u098f\u0995\u09ae\u09a4 \u09b9\u0993\u09df\u09be (\u0995\u0996\u09a8\u09cb \u09a8\u09be)"},
+  "ex-n5":{"en":"A short guest list &mdash; have you met a UP family?","hi":"\u091b\u094b\u091f\u0940 \u092e\u0947\u0939\u092e\u093e\u0928 \u0938\u0942\u091a\u0940 &mdash; \u0915\u094d\u092f\u093e \u0906\u092a\u0928\u0947 \u092f\u0942\u092a\u0940 \u0915\u093e \u0915\u094b\u0908 \u092a\u0930\u093f\u0935\u093e\u0930 \u0926\u0947\u0916\u093e \u0939\u0948?","bn":"\u099b\u09cb\u099f \u0985\u09a4\u09bf\u09a5\u09bf \u09a4\u09be\u09b2\u09bf\u0995\u09be &mdash; \u0986\u09aa\u09a8\u09bf \u0995\u09bf \u0995\u09cb\u09a8\u09cb \u0987\u0989\u09aa\u09bf \u09aa\u09b0\u09bf\u09ac\u09be\u09b0 \u09a6\u09c7\u0996\u09c7\u099b\u09c7\u09a8?"},
+  "ex-joke": {"en":"No alcohol means you'll actually remember the Bhojpuri song an uncle made you dance to. Worth it. &#127775;","hi":"\u0936\u0930\u093e\u092c \u0928\u0939\u0940\u0902 \u0924\u094b \u0906\u092a \u0935\u094b \u092d\u094b\u091c\u092a\u0941\u0930\u0940 \u0917\u093e\u0928\u093e \u092f\u093e\u0926 \u0930\u0916\u0947\u0902\u0917\u0947 \u091c\u093f\u0938 \u092a\u0930 \u091a\u093e\u091a\u093e\u091c\u0940 \u0928\u0947 \u0928\u091a\u093e\u092f\u093e \u0925\u093e\u0964 \u0938\u093e\u0930\u094d\u0925\u0915 \u0939\u0948\u0964 &#127775;","bn":"\u09ae\u09a6 \u09a8\u09c7\u0987 \u09ae\u09be\u09a8\u09c7 \u09b8\u09c7\u0987 \u09ad\u09cb\u099c\u09aa\u09c1\u09b0\u09bf \u0997\u09be\u09a8\u099f\u09be \u09ae\u09a8\u09c7 \u09a5\u09be\u0995\u09ac\u09c7 \u09af\u09c7\u099f\u09be\u09df \u098f\u0995\u099c\u09a8 \u0995\u09be\u0995\u09be \u09a8\u09be\u099a\u09bf\u09df\u09c7\u099b\u09bf\u09b2\u09c7\u09a8\u0964 \u09b8\u09be\u09b0\u09cd\u09a5\u0995\u0964 &#127775;"},
+
+  "rsvp-eyebrow":{"en":"&#10022; You're Invited! &#10022;","hi":"&#10022; \u0906\u092a \u0906\u092e\u0902\u0924\u094d\u0930\u093f\u0924 \u0939\u0948\u0902! &#10022;","bn":"&#10022; \u0986\u09aa\u09a8\u09bf \u0986\u09ae\u09a8\u09cd\u09a4\u09cd\u09b0\u09bf\u09a4! &#10022;"},
+  "rsvp-title":  {"en":"Will You Join Us?","hi":"\u0915\u094d\u092f\u093e \u0906\u092a \u0906\u090f\u0902\u0917\u0947?","bn":"\u0986\u09aa\u09a8\u09bf \u0995\u09bf \u0986\u09b8\u09ac\u09c7\u09a8?"},
+  "rsvp-note":   {"en":"&ldquo;Please let us know you're coming so we can accurately estimate how many gulab jamuns to order.&rdquo;","hi":"&ldquo;\u0915\u0943\u092a\u092f\u093e \u092c\u0924\u093e\u090f\u0902 \u0915\u093f \u0906\u092a \u0906 \u0930\u0939\u0947 \u0939\u0948\u0902 \u0924\u093e\u0915\u093f \u0939\u092e \u0938\u0939\u0940 \u0905\u0928\u0941\u092e\u093e\u0928 \u0932\u0917\u093e \u0938\u0915\u0947\u0902 \u0915\u093f \u0915\u093f\u0924\u0928\u0947 \u0917\u0941\u0932\u093e\u092c \u091c\u093e\u092e\u0941\u0928 \u092e\u0902\u0917\u093e\u0928\u0947 \u0939\u0948\u0902\u0964&rdquo;","bn":"&ldquo;\u0985\u09a8\u09c1\u0997\u09cd\u09b0\u09b9 \u0995\u09b0\u09c7 \u099c\u09be\u09a8\u09be\u09a8 \u0986\u09aa\u09a8\u09bf \u0986\u09b8\u099b\u09c7\u09a8, \u09af\u09be\u09a4\u09c7 \u0986\u09ae\u09b0\u09be \u09b8\u09a0\u09bf\u0995\u09ad\u09be\u09ac\u09c7 \u09b9\u09bf\u09b8\u09be\u09ac \u0995\u09b0\u09a4\u09c7 \u09aa\u09be\u09b0\u09bf \u0995\u09a4 \u0997\u09c1\u09b2\u09be\u09ac \u099c\u09be\u09ae\u09c1\u09a8 \u0985\u09b0\u09cd\u09a1\u09be\u09b0 \u0995\u09b0\u09a4\u09c7 \u09b9\u09ac\u09c7\u0964&rdquo;"},
+  "rsvp-yes":    {"en":"&#127881; Absolutely Coming!","hi":"&#127881; \u092c\u093f\u0932\u0915\u0941\u0932 \u0906 \u0930\u0939\u0947 \u0939\u0948\u0902!","bn":"&#127881; \u0985\u09ac\u09b6\u09cd\u09af\u0987 \u0986\u09b8\u099b\u09bf!"},
+  "rsvp-maybe":  {"en":"&#129300; Maybe...","hi":"&#129300; \u0936\u093e\u092f\u0926...","bn":"&#129300; \u09b9\u09df\u09a4\u09cb..."},
+  "rsvp-no":     {"en":"&#128546; Can't Make It","hi":"&#128546; \u0906 \u0928\u0939\u0940\u0902 \u092a\u093e\u090f\u0902\u0917\u0947","bn":"&#128546; \u0986\u09b8\u09a4\u09c7 \u09aa\u09be\u09b0\u09ac \u09a8\u09be"},
+  "rsvp-btn":    {"en":"Send My RSVP &#128140;","hi":"\u0909\u092a\u0938\u094d\u0925\u093f\u0924\u093f \u092d\u0947\u091c\u0947\u0902 &#128140;","bn":"\u09a8\u09bf\u09b6\u09cd\u099a\u09bf\u09a4 \u0995\u09b0\u09c1\u09a8 &#128140;"},
+
+  "footer-dates":{"en":"28 &ndash; 29 January &bull; Indore, India","hi":"\u0968\u096e &ndash; \u0968\u096f \u091c\u0928\u0935\u0930\u0940 &bull; \u0907\u0902\u0926\u094c\u0930, \u092d\u093e\u0930\u0924","bn":"\u09e8\u09ee &ndash; \u09e8\u09ef \u099c\u09be\u09a8\u09c1\u09af\u09bc\u09be\u09b0\u09bf &bull; \u0987\u09a8\u09cd\u09a6\u09cb\u09b0, \u09ad\u09be\u09b0\u09a4"},
+  "footer-note": {"en":"&ldquo;Made with love, mishti doi, gulab jamun, and a slightly stressed cross-cultural wedding planning team.&rdquo;","hi":"&ldquo;\u092a\u094d\u092f\u093e\u0930, \u092e\u093f\u0937\u094d\u091f\u0940 \u0926\u094b\u0908, \u0917\u0941\u0932\u093e\u092c \u091c\u093e\u092e\u0941\u0928 \u0914\u0930 \u0925\u094b\u095c\u0947 \u092a\u0930\u0947\u0936\u093e\u0928 \u0905\u0902\u0924\u0930-\u0938\u093e\u0902\u0938\u094d\u0915\u0943\u0924\u093f\u0915 \u0935\u093f\u0935\u093e\u0939 \u092f\u094b\u091c\u0928\u093e \u091f\u0940\u092e \u0915\u0947 \u0938\u093e\u0925 \u092c\u0928\u093e\u092f\u093e \u0917\u092f\u093e\u0964&rdquo;","bn":"&ldquo;\u09ad\u09be\u09b2\u09cb\u09ac\u09be\u09b8\u09be, \u09ae\u09bf\u09b7\u09cd\u099f\u09bf \u09a6\u0987, \u0997\u09c1\u09b2\u09be\u09ac \u099c\u09be\u09ae\u09c1\u09a8 \u0986\u09b0 \u098f\u0995\u099f\u09c1 \u099a\u09be\u09aa\u09c7 \u09a5\u09be\u0995\u09be \u0986\u09a8\u09cd\u09a4\u0983\u09b8\u09be\u0982\u09b8\u09cd\u0995\u09c3\u09a4\u09bf\u0995 \u09ac\u09bf\u09ac\u09be\u09b9 \u09aa\u09b0\u09bf\u0995\u09b2\u09cd\u09aa\u09a8\u09be \u09a6\u09b2\u09c7\u09b0 \u09b8\u09be\u09a5\u09c7 \u09a4\u09c8\u09b0\u09bf\u0964&rdquo;"},
+  "footer-joke": {"en":"Reading this at 2am wondering what to wear? Something bright and festive. You'll thank us later.","hi":"\u0930\u093e\u0924 2 \u092c\u091c\u0947 \u092a\u095d \u0930\u0939\u0947 \u0939\u0948\u0902 \u0914\u0930 \u0938\u094b\u091a \u0930\u0939\u0947 \u0939\u0948\u0902 \u0915\u094d\u092f\u093e \u092a\u0939\u0928\u0947\u0902? \u0915\u0941\u091b \u091a\u092e\u0915\u0940\u0932\u093e \u0914\u0930 \u0909\u0924\u094d\u0938\u0935\u0940\u0964 \u092c\u093e\u0926 \u092e\u0947\u0902 \u0936\u0941\u0915\u094d\u0930\u0917\u0941\u091c\u093c\u093e\u0930 \u0939\u094b\u0902\u0917\u0947\u0964","bn":"\u09b0\u09be\u09a4 \u09e8\u099f\u09be\u09df \u09aa\u09dc\u099b\u09c7\u09a8 \u0986\u09b0 \u09ad\u09be\u09ac\u099b\u09c7\u09a8 \u0995\u09c0 \u09aa\u09b0\u09ac\u09c7\u09a8? \u0989\u099c\u09cd\u099c\u09cd\u09ac\u09b2 \u0993 \u0989\u09ce\u09b8\u09ac\u09ae\u09c1\u0996\u09b0 \u0995\u09bf\u099b\u09c1\u0964 \u09aa\u09b0\u09c7 \u09a7\u09a8\u09cd\u09af\u09ac\u09be\u09a6 \u09a6\u09c7\u09ac\u09c7\u09a8\u0964"}
+}
+</script>
+
+<script src="js/wedding-invitation.js"></script>
+
+<!-- ── Flower Petal Rain ── -->
+<style>
+#petal-container{position:fixed;inset:0;pointer-events:none;z-index:9998;overflow:hidden}
+.petal{
+  position:absolute;
+  top:-60px;
+  width:12px;
+  height:12px;
+  opacity:0;
+  animation:petalFall linear infinite;
+  will-change:transform,opacity;
+}
+@keyframes petalFall{
+  0%  {transform:translateY(0) translateX(0) rotate(0deg) scale(1);  opacity:0}
+  5%  {opacity:.85}
+  85% {opacity:.7}
+  100%{transform:translateY(105vh) translateX(var(--drift)) rotate(var(--spin)) scale(.7); opacity:0}
+}
+</style>
+<div id="petal-container"></div>
+<script>
+(function(){
+  var container=document.getElementById('petal-container');
+  if(!container)return;
+
+  var shapes=[
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g opacity=".93"><ellipse cx="24" cy="8"  rx="5" ry="10" fill="PETAL" transform="rotate(0   24 24)"/><ellipse cx="24" cy="8" rx="5" ry="10" fill="PETAL" transform="rotate(45  24 24)"/><ellipse cx="24" cy="8" rx="5" ry="10" fill="PETAL" transform="rotate(90  24 24)"/><ellipse cx="24" cy="8" rx="5" ry="10" fill="PETAL" transform="rotate(135 24 24)"/><ellipse cx="24" cy="8" rx="5" ry="10" fill="PETAL" transform="rotate(180 24 24)"/><ellipse cx="24" cy="8" rx="5" ry="10" fill="PETAL" transform="rotate(225 24 24)"/><ellipse cx="24" cy="8" rx="5" ry="10" fill="PETAL" transform="rotate(270 24 24)"/><ellipse cx="24" cy="8" rx="5" ry="10" fill="PETAL" transform="rotate(315 24 24)"/><circle cx="24" cy="24" r="7" fill="CENTRE"/></g></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46"><g opacity=".9"><ellipse cx="23" cy="7" rx="4" ry="9" fill="PETAL" transform="rotate(0   23 23)"/><ellipse cx="23" cy="7" rx="4" ry="9" fill="PETAL" transform="rotate(30  23 23)"/><ellipse cx="23" cy="7" rx="4" ry="9" fill="PETAL" transform="rotate(60  23 23)"/><ellipse cx="23" cy="7" rx="4" ry="9" fill="PETAL" transform="rotate(90  23 23)"/><ellipse cx="23" cy="7" rx="4" ry="9" fill="PETAL" transform="rotate(120 23 23)"/><ellipse cx="23" cy="7" rx="4" ry="9" fill="PETAL" transform="rotate(150 23 23)"/><ellipse cx="23" cy="7" rx="4" ry="9" fill="PETAL" transform="rotate(180 23 23)"/><ellipse cx="23" cy="7" rx="4" ry="9" fill="PETAL" transform="rotate(210 23 23)"/><ellipse cx="23" cy="7" rx="4" ry="9" fill="PETAL" transform="rotate(240 23 23)"/><ellipse cx="23" cy="7" rx="4" ry="9" fill="PETAL" transform="rotate(270 23 23)"/><ellipse cx="23" cy="7" rx="4" ry="9" fill="PETAL" transform="rotate(300 23 23)"/><ellipse cx="23" cy="7" rx="4" ry="9" fill="PETAL" transform="rotate(330 23 23)"/><circle cx="23" cy="23" r="6" fill="CENTRE"/></g></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54"><g opacity=".92"><path d="M27 27 Q27 9 31 6 Q36 3 37 13 Q38 21 27 27Z" fill="PETALLIGHT" transform="rotate(0   27 27)"/><path d="M27 27 Q27 9 31 6 Q36 3 37 13 Q38 21 27 27Z" fill="PETALLIGHT" transform="rotate(60  27 27)"/><path d="M27 27 Q27 9 31 6 Q36 3 37 13 Q38 21 27 27Z" fill="PETALLIGHT" transform="rotate(120 27 27)"/><path d="M27 27 Q27 9 31 6 Q36 3 37 13 Q38 21 27 27Z" fill="PETALLIGHT" transform="rotate(180 27 27)"/><path d="M27 27 Q27 9 31 6 Q36 3 37 13 Q38 21 27 27Z" fill="PETALLIGHT" transform="rotate(240 27 27)"/><path d="M27 27 Q27 9 31 6 Q36 3 37 13 Q38 21 27 27Z" fill="PETALLIGHT" transform="rotate(300 27 27)"/><path d="M27 27 Q27 12 30 10 Q33 8 34 16 Q34 22 27 27Z" fill="PETAL" transform="rotate(0   27 27)"/><path d="M27 27 Q27 12 30 10 Q33 8 34 16 Q34 22 27 27Z" fill="PETAL" transform="rotate(60  27 27)"/><path d="M27 27 Q27 12 30 10 Q33 8 34 16 Q34 22 27 27Z" fill="PETAL" transform="rotate(120 27 27)"/><path d="M27 27 Q27 12 30 10 Q33 8 34 16 Q34 22 27 27Z" fill="PETAL" transform="rotate(180 27 27)"/><path d="M27 27 Q27 12 30 10 Q33 8 34 16 Q34 22 27 27Z" fill="PETAL" transform="rotate(240 27 27)"/><path d="M27 27 Q27 12 30 10 Q33 8 34 16 Q34 22 27 27Z" fill="PETAL" transform="rotate(300 27 27)"/><circle cx="27" cy="27" r="6" fill="CENTRE"/></g></svg>',
+    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 50"><g opacity=".9"><path d="M22 42 Q10 35 10 20 Q10 8 22 4 Q34 8 34 20 Q34 35 22 42Z" fill="PETALLIGHT"/><path d="M22 42 Q12 34 13 20 Q14 10 22 6 Q30 10 31 20 Q32 34 22 42Z" fill="PETAL"/><path d="M22 42 Q16 33 17 20 Q18 12 22 8 Q26 12 27 20 Q28 33 22 42Z" fill="PETALLIGHT" opacity=".8"/><ellipse cx="22" cy="22" rx="6" ry="7" fill="CENTRE"/></g></svg>'
+  ];
+
+  var palettes=[
+    ['#FF8C00','#FFAA33','#FFE26B'],
+    ['#FFA500','#FFC84A','#FFE26B'],
+    ['#FF7700','#FF9933','#FFE26B'],
+    ['#FFB300','#FFD055','#FFF0A0'],
+    ['#FF6600','#FF8833','#FFD700'],
+    ['#FF69B4','#FFB6D9','#FFF0C0'],
+    ['#EC4899','#F9A8D4','#FFF0C0'],
+    ['#FF4DA6','#FF99CC','#FFF5C0'],
+    ['#DB2777','#F472B6','#FFF0C0'],
+    ['#C2185B','#F06292','#FFE4B5']
+  ];
+
+  function rand(min,max){return min+Math.random()*(max-min);}
+
+  function spawnPetal(){
+    var el=document.createElement('div');
+    el.className='petal';
+    var pal=palettes[Math.floor(Math.random()*palettes.length)];
+    var shape=shapes[Math.floor(Math.random()*shapes.length)];
+    el.innerHTML=shape.replace(/PETALLIGHT/g,pal[1]).replace(/PETAL/g,pal[0]).replace(/CENTRE/g,pal[2]);
+    var size=Math.round(rand(22,40));
+    el.style.width=size+'px';
+    el.style.height=size+'px';
+    el.style.left=rand(-2,102)+'vw';
+    el.style.setProperty('--drift',rand(-120,120)+'px');
+    el.style.setProperty('--spin',rand(-400,400)+'deg');
+    var dur=rand(14,30);
+    el.style.animationDuration=dur+'s';
+    el.style.animationDelay=rand(0,dur)+'s';
+    container.appendChild(el);
+    setTimeout(function(){if(el.parentNode)el.parentNode.removeChild(el);},(dur*2+rand(0,dur))*1000);
+    return el;
+  }
+
+  // ── Wind effect ──────────────────────────────────────────
+  function blowPetal(el, mouseX, mouseY, force){
+    if(el.dataset.blown)return;
+    el.dataset.blown='1';
+
+    var rect=el.getBoundingClientRect();
+    var cx=rect.left+rect.width/2;
+    var cy=rect.top+rect.height/2;
+    var dx=cx-mouseX, dy=cy-mouseY;
+    var dist=Math.sqrt(dx*dx+dy*dy)||1;
+
+    // freeze at current screen position
+    el.style.animation='none';
+    el.style.position='fixed';
+    el.style.top=rect.top+'px';
+    el.style.left=rect.left+'px';
+    el.style.margin='0';
+    el.style.opacity='0.85';
+    el.style.transition='transform 0.65s cubic-bezier(.2,.8,.4,1), opacity 0.55s ease-out';
+
+    var tx=(dx/dist)*force;
+    var ty=(dy/dist)*force - 40; // slight upward kick
+    var spin=rand(-180,180);
+
+    // trigger on next two frames so transition fires
+    requestAnimationFrame(function(){
+      requestAnimationFrame(function(){
+        el.style.transform='translate('+tx+'px,'+ty+'px) rotate('+spin+'deg) scale(0.25)';
+        el.style.opacity='0';
+      });
+    });
+
+    setTimeout(function(){
+      if(el.parentNode)el.parentNode.removeChild(el);
+      spawnPetal();
+    },750);
+  }
+
+  var windRadius=130, clickRadius=220;
+  var lastMoveTime=0;
+
+  document.addEventListener('mousemove',function(e){
+    var now=Date.now();
+    if(now-lastMoveTime<90)return; // throttle ~11fps
+    lastMoveTime=now;
+    var petals=container.querySelectorAll('.petal:not([data-blown])');
+    petals.forEach(function(el){
+      var rect=el.getBoundingClientRect();
+      var cx=rect.left+rect.width/2, cy=rect.top+rect.height/2;
+      var dx=cx-e.clientX, dy=cy-e.clientY;
+      if(Math.sqrt(dx*dx+dy*dy)<windRadius){
+        blowPetal(el,e.clientX,e.clientY,160);
+      }
+    });
+  });
+
+  document.addEventListener('click',function(e){
+    var petals=container.querySelectorAll('.petal:not([data-blown])');
+    petals.forEach(function(el){
+      var rect=el.getBoundingClientRect();
+      var cx=rect.left+rect.width/2, cy=rect.top+rect.height/2;
+      var dx=cx-e.clientX, dy=cy-e.clientY;
+      if(Math.sqrt(dx*dx+dy*dy)<clickRadius){
+        blowPetal(el,e.clientX,e.clientY,260);
+      }
+    });
+  });
+  // ─────────────────────────────────────────────────────────
+
+  // fewer initial petals
+  for(var i=0;i<15;i++)spawnPetal();
+
+  // slower spawn rate
+  setInterval(spawnPetal,2200);
+})();
+</script>
+<script>
+// ── Polaroid Strip — fetches manifest.json, builds polaroids dynamically ──
+(function(){
+  var strip = document.getElementById('polaroid-strip');
+  if(!strip) return;
+
+  // convert "first-engagement.jpeg" → "First Engagement"
+  function toCaption(filename){
+    return filename
+      .replace(/\.[^.]+$/, '')       // strip extension
+      .split('-')
+      .map(function(w){ return w.charAt(0).toUpperCase() + w.slice(1); })
+      .join(' ');
+  }
+
+  // fixed gentle tilts cycling across photos so each looks hand-placed
+  var tilts = [-2.8, 1.6, -1.2, 3.0, -2.2, 1.0, -3.5, 2.4];
+
+  function build(files){
+    strip.innerHTML = '';
+    files.forEach(function(file, i){
+      var tilt = tilts[i % tilts.length];
+      var caption = toCaption(file);
+
+      var card = document.createElement('div');
+      card.className = 'polaroid';
+      card.style.transform = 'rotate(' + tilt + 'deg)';
+
+      var img = document.createElement('img');
+      img.src = 'images/couples/' + file;
+      img.alt = caption;
+      img.loading = 'lazy';
+
+      var cap = document.createElement('p');
+      cap.className = 'pol-caption';
+      cap.textContent = caption;
+
+      card.appendChild(img);
+      card.appendChild(cap);
+      strip.appendChild(card);
+    });
+  }
+
+  fetch('images/couples/manifest.json')
+    .then(function(r){ return r.json(); })
+    .then(build)
+    .catch(function(){ console.warn('Could not load polaroid manifest.'); });
+})();
+</script>
+
+<script>
+// ── RSVP — FormSubmit.co ──
+function submitRSVP(){
+  var name    = document.getElementById('rsvpName').value.trim();
+  var contact = document.getElementById('rsvpContact').value.trim();
+  var guests  = document.getElementById('rsvpGuests').value || '1';
+  var attEl   = document.querySelector('input[name="att"]:checked');
+
+  if(!name || !contact || !attEl){
+    alert('Please fill in your name, contact, and attendance — we need to save enough gulab jamuns! 🍮');
+    return;
+  }
+
+  var btn = document.querySelector('.rsvp-btn');
+  btn.disabled = true;
+  btn.textContent = 'Sending… 💌';
+
+  // Try AJAX first; fall back to a hidden real <form> submit if it fails
+  fetch('https://formsubmit.co/ajax/mohitgorakhapuriya29@gmail.com', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({
+      Name:        name,
+      Contact:     contact,
+      Guests:      guests,
+      Attendance:  attEl.value,
+      _subject:    'New RSVP — Mohit & Rupanjana Wedding 💍',
+      _captcha:    'false',
+      _template:   'table'
+    })
+  })
+  .then(function(res){
+    if(!res.ok) throw new Error('HTTP ' + res.status);
+    return res.json();
+  })
+  .then(function(json){
+    if(json.success === 'true' || json.success === true){
+      showSuccess();
+    } else {
+      throw new Error('non-success: ' + JSON.stringify(json));
+    }
+  })
+  .catch(function(err){
+    console.warn('AJAX failed, falling back to form submit:', err);
+    fallbackSubmit(name, contact, guests, attEl.value);
+  });
+}
+
+function showSuccess(){
+  document.getElementById('rsvpForm').style.display    = 'none';
+  document.getElementById('rsvpSuccess').style.display = 'block';
+}
+
+// Hidden native form — works even when fetch/CORS fails
+function fallbackSubmit(name, contact, guests, attendance){
+  var form = document.createElement('form');
+  form.method  = 'POST';
+  form.action  = 'https://formsubmit.co/mohitgorakhapuriya29@gmail.com';
+
+  var fields = {
+    Name:       name,
+    Contact:    contact,
+    Guests:     guests,
+    Attendance: attendance,
+    _subject:   'New RSVP — Mohit & Rupanjana Wedding 💍',
+    _captcha:   'false',
+    _template:  'table',
+    _next:      window.location.href.split('?')[0] + '?rsvp=sent#rsvp'
+  };
+
+  Object.keys(fields).forEach(function(k){
+    var inp = document.createElement('input');
+    inp.type  = 'hidden';
+    inp.name  = k;
+    inp.value = fields[k];
+    form.appendChild(inp);
+  });
+
+  document.body.appendChild(form);
+  form.submit();
+}
+
+// Show success banner if redirected back after fallback submit
+(function(){
+  if(window.location.search.indexOf('rsvp=sent') !== -1){
+    window.addEventListener('DOMContentLoaded', function(){
+      var f = document.getElementById('rsvpForm');
+      var s = document.getElementById('rsvpSuccess');
+      if(f) f.style.display = 'none';
+      if(s) s.style.display = 'block';
+      // clean the URL
+      history.replaceState(null,'', window.location.pathname + '#rsvp');
+    });
+  }
+})();
+</script>
+</body>
+</html>
