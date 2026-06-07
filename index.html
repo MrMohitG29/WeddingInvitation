@@ -1403,7 +1403,7 @@ function submitRSVP(){
   })
   .then(function(json){
     if(json.success === 'true' || json.success === true){
-      showSuccess();
+      showSuccess(attEl.value);
     } else {
       throw new Error('non-success: ' + JSON.stringify(json));
     }
@@ -1414,7 +1414,15 @@ function submitRSVP(){
   });
 }
 
-function showSuccess(){
+function showSuccess(att){
+  var msgs = {
+    yes:   { emoji: '🎊', text: "Woohoo! You're officially on the guest list! We're saving you a seat and at least three rounds of gulab jamuns. See you there! 🍽️💍" },
+    maybe: { emoji: '🤞', text: "Maybe?! We'll keep a spare gulab jamun on standby with your name on it just in case. We really, really hope you make it! 🙏" },
+    no:    { emoji: '💌', text: "So sad to hear that!! Please send your blessings. 🌸" }
+  };
+  var m = msgs[att] || msgs.yes;
+  document.getElementById('rsvpSuccess').querySelector('div').textContent = m.emoji;
+  document.getElementById('rsvpMsg').textContent = m.text;
   document.getElementById('rsvpForm').style.display    = 'none';
   document.getElementById('rsvpSuccess').style.display = 'block';
 }
