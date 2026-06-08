@@ -173,7 +173,9 @@ body.lang-en{font-family:'Lato',sans-serif}
 .deco-hanging--right { right:0; object-position:right top; transform:scaleX(-1); }
 
 /* ── Responsive ───────────────────────────────────────────────── */
+#shivShaktiBg{object-fit:cover;object-position:center center}
 @media(max-width:600px){
+  #shivShaktiBg{object-fit:contain;object-position:center center}
   nav{gap:16px;padding:10px 14px}
   nav a{font-size:10px}
   .events-grid,.expect-grid{grid-template-columns:1fr}
