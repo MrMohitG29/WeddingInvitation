@@ -175,6 +175,19 @@
     <p class="hero-sub" data-i18n="hero-sub">A boy from Uttar Pradesh &amp; a girl from Bengal walk into a wedding…<br>and everyone lived happily, and very loudly, ever after. 🌸</p>
     <div class="scroll-hint"><span>Scroll</span><div class="scroll-arrow"></div></div>
   </div>
+  <!-- Alternate hero content for invitation subdomain -->
+  <div class="hero-content hero-content-invite" style="display:none">
+    <p class="hero-badge" data-i18n="hero-badge">❈ একটি বিবাহের আমন্ত্রণ · A Wedding Invitation ❈</p>
+    <p class="hero-tagline" data-i18n="hero-tagline"><span style="font-weight:900; font-size: 17px; font-family: 'Jost',sans-serif";>Smt. Ronita &amp; Shri Rittik Mitra</span><br> Cordially invite you to join in the wedding celebration of their beloved daughter Rupanjana.</p>
+    <div class="hero-names" style="display:flex;flex-direction:column;align-items:center;gap:6px">
+      <div style="font-family:'Cormorant Garamond', serif;font-size:15px;font-weight:700;color:rgba(74,26,5,.85);text-transform:none;letter-spacing:0.6px">Gd/o Late Smt. Rekha &amp; Late Shri Rabin Mitra</div>
+      <div style="font-family:'Great Vibes',cursive;font-size:clamp(58px,12vw,110px);color:#4A1A05;line-height:1;letter-spacing:2px">Rupanjana<span class="amp">&amp;</span>Mohit</div>
+      <div style="font-family:'Cormorant Garamond', serif;font-size:15px;font-weight:700;color:rgba(74,26,5,.85);text-transform:none;letter-spacing:0.6px">Gs/o Smt. Vimla &amp; Shri Devidas Gorakhpuriya</div>
+      <div style="font-family:'Cormorant Garamond', serif;font-size:15px;font-weight:700;color:rgba(74,26,5,.85);text-transform:none;letter-spacing:0.6px">S/o Smt. Usha &amp; Shri Sunil Gorakhpuriya</div>
+    </div>
+    <p class="hero-sub" data-i18n="hero-sub">A boy from Uttar Pradesh &amp; a girl from Bengal walk into a wedding&hellip;<br>and everyone lived happily, and very loudly, ever after. 🌸</p>
+    <div class="scroll-hint"><span>Scroll</span><div class="scroll-arrow"></div></div>
+  </div>
 </section>
 
 <!-- marigold strip -->
@@ -740,7 +753,7 @@
 </div>
 
 <!-- ═══ THE LOVE STORY — Bengali girl meets UP boy ═══ -->
-<section style="background:#FDF6E9;padding:72px 24px;position:relative;overflow:hidden">
+<section style="background:#FDF6E9;padding:72px 24px;position:relative;overflow:hidden" id="photo-section">
 
   <!-- faint alpona corner decoration -->
   <svg style="position:absolute;top:0;left:0;opacity:.05;pointer-events:none" width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
@@ -766,7 +779,7 @@
     <div class="section-header reveal">
       <p class="section-label-light" data-i18n="ls-label">✦ পশ্চিমবঙ্গ মিলিত হয় উত্তরপ্রদেশের সাথে ✦</p>
       <h2 class="section-title-light" data-i18n="ls-title">When Bengal Met Uttar Pradesh</h2>
-      <p style="font-size:14px;font-weight:600;color:var(--mid);font-style:italic;margin-top:10px;line-height:1.8" data-i18n="ls-sub">A cross-cultural love story, told honestly with affection, amusement, and mild culinary disagreements.</p>
+      <p style="font-size:14px;font-weight:600;color:var(--mid);font-style:italic;margin-top:10px;line-height:1.8" data-i18n="ls-sub" id="photo-section-description">A cross-cultural love story, told honestly with affection, amusement, and mild culinary disagreements.</p>
     </div>
 
     <!-- ── Polaroid Photo Strip (dynamically built from manifest.json) ── -->
@@ -1365,8 +1378,43 @@
 
   fetch('images/couples/manifest.json')
     .then(function(r){ return r.json(); })
-    .then(build)
+    .then(function(files){
+      try {
+        var host = (window.location.hostname || '').toLowerCase();
+        // When served from the invitation subdomain (or local test hosts), show a minimal set of couple photos
+        if(host === 'wedding.mitrahuimohit.in' || host === '127.0.0.1' || host === 'localhost'){
+          files = files.filter(function(f){
+            return f === 'the-beginning-of-always.jpeg' || f === 'dreaming-of-forever.jpeg';
+          });
+          var descEl = document.getElementById('photo-section-description');
+          if(descEl) descEl.style.display = 'none';
+          var baraatEl = document.getElementsByClassName('ev-card--baraat')[0];
+          if(baraatEl) baraatEl.style.display = 'none';
+        }
+      } catch(err){
+        console.warn('Polaroid hostname filter failed', err);
+      }
+      build(files);
+    })
     .catch(function(){ console.warn('Could not load polaroid manifest.'); });
+})();
+</script>
+
+<script>
+// Show alternate hero content on invitation subdomain
+(function(){
+  try{
+    var host = (window.location.hostname || '').toLowerCase();
+    if(host === 'wedding.mitrahuimohit.in' || host === '127.0.0.1' || host === 'localhost'){
+      var orig = document.querySelector('.hero-content');
+      var alt  = document.querySelector('.hero-content-invite');
+      var altsub = alt.querySelector('.hero-sub');
+
+      if(orig) orig.style.display = 'none';
+      if(altsub) altsub.style.display = 'none';
+      if(alt)  alt.style.display = '';
+    }
+  }catch(e){ console.warn('Hero swap failed', e); }
 })();
 </script>
 
